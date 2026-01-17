@@ -1,0 +1,1258 @@
+2026-01-13 17:35:42.611 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+2026-01-13 17:35:43.337 [Debug] Entity Framework Core "9.0.6" initialized '"DataContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"9.0.4"' with options: "MigrationsAssembly=Persistence "
+2026-01-13 17:35:43.429 [Debug] Creating DbConnection.
+2026-01-13 17:35:43.446 [Debug] Created DbConnection. (15ms).
+2026-01-13 17:35:43.454 [Debug] Migrating using database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:35:43.463 [Debug] Creating DbConnection.
+2026-01-13 17:35:43.470 [Debug] Created DbConnection. (6ms).
+2026-01-13 17:35:43.472 [Debug] Opening connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:35:43.486 [Debug] Opened connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:35:43.491 [Debug] Disposing connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:35:43.502 [Debug] Disposed connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"' (7ms).
+2026-01-13 17:35:43.513 [Debug] Opening connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:35:43.519 [Debug] Opened connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:35:43.522 [Information] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-01-13 17:35:43.530 [Debug] Creating DbCommand for '"ExecuteScalar"'.
+2026-01-13 17:35:43.538 [Debug] Created DbCommand for '"ExecuteScalar"' (8ms).
+2026-01-13 17:35:43.541 [Debug] Initialized DbCommand for '"ExecuteScalar"' (12ms).
+2026-01-13 17:35:43.552 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*) FROM \"sqlite_master\" WHERE \"name\" = '__EFMigrationsLock' AND \"type\" = 'table';"
+2026-01-13 17:35:43.569 [Information] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*) FROM \"sqlite_master\" WHERE \"name\" = '__EFMigrationsLock' AND \"type\" = 'table';"
+2026-01-13 17:35:43.575 [Debug] Creating DbCommand for '"ExecuteScalar"'.
+2026-01-13 17:35:43.585 [Debug] Created DbCommand for '"ExecuteScalar"' (10ms).
+2026-01-13 17:35:43.586 [Debug] Initialized DbCommand for '"ExecuteScalar"' (11ms).
+2026-01-13 17:35:43.587 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""INSERT OR IGNORE INTO \"__EFMigrationsLock\"(\"Id\", \"Timestamp\") VALUES(1, '2026-01-14 01:35:43.5744848+00:00');
+SELECT changes();"
+2026-01-13 17:35:43.602 [Information] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""INSERT OR IGNORE INTO \"__EFMigrationsLock\"(\"Id\", \"Timestamp\") VALUES(1, '2026-01-14 01:35:43.5744848+00:00');
+SELECT changes();"
+2026-01-13 17:35:43.645 [Debug] Beginning transaction with isolation level '"Unspecified"'.
+2026-01-13 17:35:43.649 [Debug] Began transaction with isolation level '"Serializable"'.
+2026-01-13 17:35:43.651 [Debug] Creating DbCommand for '"ExecuteNonQuery"'.
+2026-01-13 17:35:43.652 [Debug] Created DbCommand for '"ExecuteNonQuery"' (1ms).
+2026-01-13 17:35:43.654 [Debug] Initialized DbCommand for '"ExecuteNonQuery"' (2ms).
+2026-01-13 17:35:43.655 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE IF NOT EXISTS \"__EFMigrationsHistory\" (
+    \"MigrationId\" TEXT NOT NULL CONSTRAINT \"PK___EFMigrationsHistory\" PRIMARY KEY,
+    \"ProductVersion\" TEXT NOT NULL
+);"
+2026-01-13 17:35:43.659 [Information] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE IF NOT EXISTS \"__EFMigrationsHistory\" (
+    \"MigrationId\" TEXT NOT NULL CONSTRAINT \"PK___EFMigrationsHistory\" PRIMARY KEY,
+    \"ProductVersion\" TEXT NOT NULL
+);"
+2026-01-13 17:35:43.668 [Debug] Committing transaction.
+2026-01-13 17:35:43.669 [Debug] Committed transaction.
+2026-01-13 17:35:43.671 [Debug] Disposing transaction.
+2026-01-13 17:35:43.673 [Debug] Beginning transaction with isolation level '"Unspecified"'.
+2026-01-13 17:35:43.681 [Debug] Began transaction with isolation level '"Serializable"'.
+2026-01-13 17:35:43.683 [Debug] Creating DbConnection.
+2026-01-13 17:35:43.684 [Debug] Created DbConnection. (0ms).
+2026-01-13 17:35:43.685 [Debug] Opening connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:35:43.686 [Debug] Opened connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:35:43.687 [Debug] Disposing connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:35:43.701 [Debug] Disposed connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"' (13ms).
+2026-01-13 17:35:43.703 [Debug] Creating DbCommand for '"ExecuteScalar"'.
+2026-01-13 17:35:43.704 [Debug] Created DbCommand for '"ExecuteScalar"' (1ms).
+2026-01-13 17:35:43.706 [Debug] Initialized DbCommand for '"ExecuteScalar"' (3ms).
+2026-01-13 17:35:43.707 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*) FROM \"sqlite_master\" WHERE \"name\" = '__EFMigrationsHistory' AND \"type\" = 'table';"
+2026-01-13 17:35:43.709 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*) FROM \"sqlite_master\" WHERE \"name\" = '__EFMigrationsHistory' AND \"type\" = 'table';"
+2026-01-13 17:35:43.712 [Debug] Creating DbCommand for '"ExecuteReader"'.
+2026-01-13 17:35:43.713 [Debug] Created DbCommand for '"ExecuteReader"' (0ms).
+2026-01-13 17:35:43.714 [Debug] Initialized DbCommand for '"ExecuteReader"' (1ms).
+2026-01-13 17:35:43.715 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";"
+2026-01-13 17:35:43.717 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";"
+2026-01-13 17:35:43.720 [Debug] Closing data reader to '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:35:43.722 [Debug] A data reader for '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"' is being disposed after spending 3ms reading results.
+2026-01-13 17:35:43.727 [Information] No migrations were applied. The database is already up to date.
+2026-01-13 17:35:43.728 [Debug] Committing transaction.
+2026-01-13 17:35:43.728 [Debug] Committed transaction.
+2026-01-13 17:35:43.729 [Debug] Creating DbCommand for '"ExecuteScalar"'.
+2026-01-13 17:35:43.730 [Debug] Created DbCommand for '"ExecuteScalar"' (0ms).
+2026-01-13 17:35:43.731 [Debug] Initialized DbCommand for '"ExecuteScalar"' (1ms).
+2026-01-13 17:35:43.732 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DELETE FROM \"__EFMigrationsLock\";"
+2026-01-13 17:35:43.735 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DELETE FROM \"__EFMigrationsLock\";"
+2026-01-13 17:35:43.737 [Debug] Disposing transaction.
+2026-01-13 17:35:43.738 [Debug] Closing connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:35:43.741 [Debug] Closed connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"' (3ms).
+2026-01-13 17:35:43.894 [Debug] '"DataContext"' disposed.
+2026-01-13 17:35:43.897 [Debug] Disposing connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:35:43.898 [Debug] Disposed connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"' (1ms).
+2026-01-13 17:35:43.943 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2026-01-13 17:35:43.976 [Debug] Hosting starting
+2026-01-13 17:35:44.177 [Information] Now listening on: "https://localhost:7095"
+2026-01-13 17:35:44.179 [Information] Now listening on: "http://localhost:5038"
+2026-01-13 17:35:44.180 [Debug] Loaded hosting startup assembly "Tools"
+2026-01-13 17:35:44.181 [Debug] Loaded hosting startup assembly "Microsoft.WebTools.ApiEndpointDiscovery"
+2026-01-13 17:35:44.182 [Debug] Loaded hosting startup assembly "Microsoft.AspNetCore.Watch.BrowserRefresh"
+2026-01-13 17:35:44.183 [Debug] Loaded hosting startup assembly "Microsoft.WebTools.BrowserLink.Net"
+2026-01-13 17:35:44.228 [Information] Application started. Press Ctrl+C to shut down.
+2026-01-13 17:35:44.230 [Information] Hosting environment: "Development"
+2026-01-13 17:35:44.231 [Information] Content root path: "F:\Marketing\Tools"
+2026-01-13 17:35:44.232 [Debug] Hosting started
+2026-01-13 17:35:44.378 [Debug] Connection id ""0HNIJ1KU42L7C"" accepted.
+2026-01-13 17:35:44.380 [Debug] Connection id ""0HNIJ1KU42L7C"" started.
+2026-01-13 17:35:44.405 [Debug] Connection id ""0HNIJ1KU42L7C"" received FIN.
+2026-01-13 17:35:44.430 [Debug] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2026-01-13 17:35:44.469 [Debug] Connection id ""0HNIJ1KU42L7C"" stopped.
+2026-01-13 17:35:44.472 [Debug] Connection id ""0HNIJ1KU42L7C"" sending FIN because: ""The Socket transport's send loop completed gracefully.""
+2026-01-13 17:35:44.633 [Debug] Connection id ""0HNIJ1KU42L7D"" accepted.
+2026-01-13 17:35:44.653 [Debug] Connection id ""0HNIJ1KU42L7D"" started.
+2026-01-13 17:35:44.694 [Debug] Connection "0HNIJ1KU42L7D" established using the following protocol: Tls13
+2026-01-13 17:35:44.805 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7095""""/swagger/index.html""" - null null
+2026-01-13 17:35:44.968 [Debug] Wildcard detected, all requests with hosts will be allowed.
+2026-01-13 17:35:44.997 [Debug] No candidates found for the request path '"/swagger/index.html"'
+2026-01-13 17:35:45.008 [Debug] Request did not match any endpoints
+2026-01-13 17:35:45.073 [Debug] Response markup is scheduled to include Browser Link script injection.
+2026-01-13 17:35:45.075 [Debug] Response markup is scheduled to include browser refresh script injection.
+2026-01-13 17:35:45.098 [Debug] Response markup was updated to include Browser Link script injection.
+2026-01-13 17:35:45.101 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7095""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2026-01-13 17:35:45.101 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7095""""/_vs/browserLink""" - null null
+2026-01-13 17:35:45.103 [Debug] Response markup was updated to include browser refresh script injection.
+2026-01-13 17:35:45.128 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7095""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 332.4952ms
+2026-01-13 17:35:45.130 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7095""""/_framework/aspnetcore-browser-refresh.js""" - 200 13746 "application/javascript; charset=utf-8" 26.4863ms
+2026-01-13 17:35:45.184 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7095""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 83.0326ms
+2026-01-13 17:35:45.211 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7095""""/swagger/v1/swagger.json""" - null null
+2026-01-13 17:35:45.218 [Debug] No candidates found for the request path '"/swagger/v1/swagger.json"'
+2026-01-13 17:35:45.220 [Debug] Request did not match any endpoints
+2026-01-13 17:35:45.263 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7095""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 51.9999ms
+2026-01-13 17:36:22.737 [Debug] Connection id ""0HNIJ1KU42L7D"" received FIN.
+2026-01-13 17:36:22.751 [Debug] Connection id ""0HNIJ1KU42L7D"" is closed. The last processed stream ID was 7.
+2026-01-13 17:36:22.761 [Debug] Connection id ""0HNIJ1KU42L7D"" sending FIN because: ""The Socket transport's send loop completed gracefully.""
+2026-01-13 17:36:22.760 [Debug] The connection queue processing loop for "0HNIJ1KU42L7D" completed.
+2026-01-13 17:36:22.765 [Debug] Connection id ""0HNIJ1KU42L7D"" stopped.
+2026-01-13 17:38:27.205 [Debug] Connection id ""0HNIJ1KU42L7E"" accepted.
+2026-01-13 17:38:27.217 [Debug] Connection id ""0HNIJ1KU42L7E"" started.
+2026-01-13 17:38:27.222 [Debug] Connection "0HNIJ1KU42L7E" established using the following protocol: Tls13
+2026-01-13 17:38:27.226 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:7095""""/api/v1/tracked-links""" - "application/json" 54
+2026-01-13 17:38:27.239 [Debug] 1 candidate(s) found for the request path '"/api/v1/tracked-links"'
+2026-01-13 17:38:27.245 [Debug] Endpoint '"Api.Controllers.v1.Redirect.TrackedLinkController.Create (Tools)"' with route pattern '"api/v1/tracked-links"' is valid for the request path '"/api/v1/tracked-links"'
+2026-01-13 17:38:27.252 [Debug] Request matched endpoint '"Api.Controllers.v1.Redirect.TrackedLinkController.Create (Tools)"'
+2026-01-13 17:38:27.258 [Debug] Static files was skipped as the request already matched an endpoint.
+2026-01-13 17:38:27.267 [Information] Executing endpoint '"Api.Controllers.v1.Redirect.TrackedLinkController.Create (Tools)"'
+2026-01-13 17:38:27.306 [Information] Route matched with "{action = \"Create\", controller = \"TrackedLink\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Domain.WhatsApp.Redirect.TrackedLink)" on controller "Api.Controllers.v1.Redirect.TrackedLinkController" ("Tools").
+2026-01-13 17:38:27.320 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2026-01-13 17:38:27.328 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2026-01-13 17:38:27.330 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-01-13 17:38:27.333 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2026-01-13 17:38:27.336 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-01-13 17:38:27.348 [Debug] Executing controller factory for controller "Api.Controllers.v1.Redirect.TrackedLinkController" ("Tools")
+2026-01-13 17:38:27.382 [Debug] Entity Framework Core "9.0.6" initialized '"DataContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"9.0.4"' with options: "MigrationsAssembly=Persistence "
+2026-01-13 17:38:27.396 [Debug] Executed controller factory for controller "Api.Controllers.v1.Redirect.TrackedLinkController" ("Tools")
+2026-01-13 17:38:27.418 [Debug] Attempting to bind parameter '"trackedLink"' of type '"Domain.WhatsApp.Redirect.TrackedLink"' ...
+2026-01-13 17:38:27.425 [Debug] Attempting to bind parameter '"trackedLink"' of type '"Domain.WhatsApp.Redirect.TrackedLink"' using the name '""' in request data ...
+2026-01-13 17:38:27.438 [Debug] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter"' for content type '"application/json"'.
+2026-01-13 17:38:27.453 [Debug] Connection id ""0HNIJ1KU42L7E"", Request id ""0HNIJ1KU42L7E:00000001"": started reading request body.
+2026-01-13 17:38:27.455 [Debug] Connection id ""0HNIJ1KU42L7E"", Request id ""0HNIJ1KU42L7E:00000001"": done reading request body.
+2026-01-13 17:38:27.471 [Debug] JSON input formatter succeeded, deserializing to type '"Domain.WhatsApp.Redirect.TrackedLink"'
+2026-01-13 17:38:27.473 [Debug] Done attempting to bind parameter '"trackedLink"' of type '"Domain.WhatsApp.Redirect.TrackedLink"'.
+2026-01-13 17:38:27.475 [Debug] Done attempting to bind parameter '"trackedLink"' of type '"Domain.WhatsApp.Redirect.TrackedLink"'.
+2026-01-13 17:38:27.481 [Debug] Attempting to validate the bound parameter '"trackedLink"' of type '"Domain.WhatsApp.Redirect.TrackedLink"' ...
+2026-01-13 17:38:27.494 [Debug] Done attempting to validate the bound parameter '"trackedLink"' of type '"Domain.WhatsApp.Redirect.TrackedLink"'.
+2026-01-13 17:38:29.334 [Debug] Context '"DataContext"' started tracking '"TrackedLink"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-13 17:38:29.344 [Debug] SaveChanges starting for '"DataContext"'.
+2026-01-13 17:38:29.350 [Debug] DetectChanges starting for '"DataContext"'.
+2026-01-13 17:38:29.363 [Debug] DetectChanges completed for '"DataContext"'.
+2026-01-13 17:38:29.421 [Debug] Creating DbConnection.
+2026-01-13 17:38:29.434 [Debug] Created DbConnection. (13ms).
+2026-01-13 17:38:29.437 [Debug] Opening connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:38:29.450 [Debug] Opened connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:38:29.456 [Debug] Creating DbCommand for '"ExecuteReader"'.
+2026-01-13 17:38:29.460 [Debug] Created DbCommand for '"ExecuteReader"' (4ms).
+2026-01-13 17:38:29.463 [Debug] Initialized DbCommand for '"ExecuteReader"' (7ms).
+2026-01-13 17:38:29.466 [Debug] Executing DbCommand [Parameters=["@p0='?' (Size = 6), @p1='?' (DbType = Boolean), @p2='?' (Size = 15), @p3='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"TrackedLinks\" (\"Id\", \"Active\", \"TargetUrl\", \"VisitCount\")
+VALUES (@p0, @p1, @p2, @p3);"
+2026-01-13 17:38:29.484 [Error] Failed executing DbCommand ("19"ms) [Parameters=["@p0='?' (Size = 6), @p1='?' (DbType = Boolean), @p2='?' (Size = 15), @p3='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"TrackedLinks\" (\"Id\", \"Active\", \"TargetUrl\", \"VisitCount\")
+VALUES (@p0, @p1, @p2, @p3);"
+2026-01-13 17:38:29.499 [Debug] Closing connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:38:29.505 [Debug] Closed connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"' (6ms).
+2026-01-13 17:38:29.517 [Error] An exception occurred in the database while saving changes for context type '"Persistence.Context.Implementation.DataContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: TrackedLinks.Id'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)"
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: TrackedLinks.Id'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-01-13 17:38:30.693 [Error] Unhandled exception captured by IErrorLogger
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: TrackedLinks.Id'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Persistence.Context.Implementation.UnitOfWork.CommitAsync() in F:\Marketing\Persistence\Context\Implementation\UnitOfWork.cs:line 20
+   at Infrastructure.Repositories.Abstract.CRUD.Create.CreateRepository`1.CreateEntity(T entity) in F:\Marketing\Infrastructure\Repositories\Abstract\CRUD\Create\CreateRepository.cs:line 27
+2026-01-13 17:38:30.748 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2026-01-13 17:38:30.762 [Debug] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2026-01-13 17:38:30.765 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter"' and content type '"text/plain"' to write the response.
+2026-01-13 17:38:30.770 [Information] Executing "BadRequestObjectResult", writing value of type '"System.String"'.
+2026-01-13 17:38:30.785 [Information] Executed action "Api.Controllers.v1.Redirect.TrackedLinkController.Create (Tools)" in 3431.3805ms
+2026-01-13 17:38:30.791 [Information] Executed endpoint '"Api.Controllers.v1.Redirect.TrackedLinkController.Create (Tools)"'
+2026-01-13 17:38:30.795 [Debug] '"DataContext"' disposed.
+2026-01-13 17:38:30.805 [Debug] Disposing connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:38:30.807 [Debug] Disposed connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"' (2ms).
+2026-01-13 17:38:30.810 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:7095""""/api/v1/tracked-links""" - 400 null "text/plain; charset=utf-8" 3584.0281ms
+2026-01-13 17:38:39.724 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:7095""""/api/v1/tracked-links""" - "application/json" 58
+2026-01-13 17:38:39.737 [Debug] 1 candidate(s) found for the request path '"/api/v1/tracked-links"'
+2026-01-13 17:38:39.738 [Debug] Endpoint '"Api.Controllers.v1.Redirect.TrackedLinkController.Create (Tools)"' with route pattern '"api/v1/tracked-links"' is valid for the request path '"/api/v1/tracked-links"'
+2026-01-13 17:38:39.746 [Debug] Request matched endpoint '"Api.Controllers.v1.Redirect.TrackedLinkController.Create (Tools)"'
+2026-01-13 17:38:39.748 [Debug] Static files was skipped as the request already matched an endpoint.
+2026-01-13 17:38:39.749 [Information] Executing endpoint '"Api.Controllers.v1.Redirect.TrackedLinkController.Create (Tools)"'
+2026-01-13 17:38:39.751 [Information] Route matched with "{action = \"Create\", controller = \"TrackedLink\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Domain.WhatsApp.Redirect.TrackedLink)" on controller "Api.Controllers.v1.Redirect.TrackedLinkController" ("Tools").
+2026-01-13 17:38:39.753 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2026-01-13 17:38:39.755 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2026-01-13 17:38:39.762 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-01-13 17:38:39.764 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2026-01-13 17:38:39.766 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-01-13 17:38:39.768 [Debug] Executing controller factory for controller "Api.Controllers.v1.Redirect.TrackedLinkController" ("Tools")
+2026-01-13 17:38:39.829 [Debug] Entity Framework Core "9.0.6" initialized '"DataContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"9.0.4"' with options: "MigrationsAssembly=Persistence "
+2026-01-13 17:38:39.839 [Debug] Executed controller factory for controller "Api.Controllers.v1.Redirect.TrackedLinkController" ("Tools")
+2026-01-13 17:38:39.842 [Debug] Attempting to bind parameter '"trackedLink"' of type '"Domain.WhatsApp.Redirect.TrackedLink"' ...
+2026-01-13 17:38:39.844 [Debug] Attempting to bind parameter '"trackedLink"' of type '"Domain.WhatsApp.Redirect.TrackedLink"' using the name '""' in request data ...
+2026-01-13 17:38:39.847 [Debug] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter"' for content type '"application/json"'.
+2026-01-13 17:38:39.849 [Debug] Connection id ""0HNIJ1KU42L7E"", Request id ""0HNIJ1KU42L7E:00000003"": started reading request body.
+2026-01-13 17:38:39.859 [Debug] Connection id ""0HNIJ1KU42L7E"", Request id ""0HNIJ1KU42L7E:00000003"": done reading request body.
+2026-01-13 17:38:39.862 [Debug] JSON input formatter succeeded, deserializing to type '"Domain.WhatsApp.Redirect.TrackedLink"'
+2026-01-13 17:38:39.864 [Debug] Done attempting to bind parameter '"trackedLink"' of type '"Domain.WhatsApp.Redirect.TrackedLink"'.
+2026-01-13 17:38:39.867 [Debug] Done attempting to bind parameter '"trackedLink"' of type '"Domain.WhatsApp.Redirect.TrackedLink"'.
+2026-01-13 17:38:39.869 [Debug] Attempting to validate the bound parameter '"trackedLink"' of type '"Domain.WhatsApp.Redirect.TrackedLink"' ...
+2026-01-13 17:38:39.871 [Debug] Done attempting to validate the bound parameter '"trackedLink"' of type '"Domain.WhatsApp.Redirect.TrackedLink"'.
+2026-01-13 17:38:42.586 [Debug] Context '"DataContext"' started tracking '"TrackedLink"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-13 17:38:42.591 [Debug] SaveChanges starting for '"DataContext"'.
+2026-01-13 17:38:42.593 [Debug] DetectChanges starting for '"DataContext"'.
+2026-01-13 17:38:42.595 [Debug] DetectChanges completed for '"DataContext"'.
+2026-01-13 17:38:42.597 [Debug] Creating DbConnection.
+2026-01-13 17:38:42.598 [Debug] Created DbConnection. (1ms).
+2026-01-13 17:38:42.607 [Debug] Opening connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:38:42.609 [Debug] Opened connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:38:42.612 [Debug] Creating DbCommand for '"ExecuteReader"'.
+2026-01-13 17:38:42.614 [Debug] Created DbCommand for '"ExecuteReader"' (1ms).
+2026-01-13 17:38:42.624 [Debug] Initialized DbCommand for '"ExecuteReader"' (12ms).
+2026-01-13 17:38:42.627 [Debug] Executing DbCommand [Parameters=["@p0='?' (Size = 10), @p1='?' (DbType = Boolean), @p2='?' (Size = 15), @p3='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"TrackedLinks\" (\"Id\", \"Active\", \"TargetUrl\", \"VisitCount\")
+VALUES (@p0, @p1, @p2, @p3);"
+2026-01-13 17:38:42.633 [Information] Executed DbCommand ("6"ms) [Parameters=["@p0='?' (Size = 10), @p1='?' (DbType = Boolean), @p2='?' (Size = 15), @p3='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"TrackedLinks\" (\"Id\", \"Active\", \"TargetUrl\", \"VisitCount\")
+VALUES (@p0, @p1, @p2, @p3);"
+2026-01-13 17:38:42.643 [Debug] Closing data reader to '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:38:42.663 [Debug] A data reader for '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"' is being disposed after spending 23ms reading results.
+2026-01-13 17:38:42.672 [Debug] Closing connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:38:42.674 [Debug] Closed connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"' (1ms).
+2026-01-13 17:38:42.683 [Debug] An entity of type '"TrackedLink"' tracked by '"DataContext"' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-13 17:38:42.686 [Debug] SaveChanges completed for '"DataContext"' with 1 entities written to the database.
+2026-01-13 17:38:47.126 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2026-01-13 17:38:47.129 [Debug] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2026-01-13 17:38:47.131 [Debug] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2026-01-13 17:38:47.145 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2026-01-13 17:38:47.146 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2026-01-13 17:38:47.153 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2026-01-13 17:38:47.154 [Information] Executing "CreatedAtActionResult", writing value of type '"Domain.WhatsApp.Redirect.TrackedLink"'.
+2026-01-13 17:38:47.185 [Debug] Found the endpoints ["Api.Controllers.v1.Redirect.TrackedLinkController.RedirectById (Tools)"] for address "(id=[1q2w3e4r5t],action=[RedirectById],controller=[TrackedLink])"
+2026-01-13 17:38:47.190 [Debug] Successfully processed template "api/v1/tracked-links/{id}" for "Api.Controllers.v1.Redirect.TrackedLinkController.RedirectById (Tools)" resulting in "/api/v1/tracked-links/1q2w3e4r5t" and ""
+2026-01-13 17:38:47.193 [Debug] Link generation succeeded for endpoints ["Api.Controllers.v1.Redirect.TrackedLinkController.RedirectById (Tools)"] with result "/api/v1/tracked-links/1q2w3e4r5t"
+2026-01-13 17:38:49.810 [Information] Executed action "Api.Controllers.v1.Redirect.TrackedLinkController.Create (Tools)" in 10041.4137ms
+2026-01-13 17:38:49.817 [Information] Executed endpoint '"Api.Controllers.v1.Redirect.TrackedLinkController.Create (Tools)"'
+2026-01-13 17:38:49.819 [Debug] '"DataContext"' disposed.
+2026-01-13 17:38:49.827 [Debug] Disposing connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:38:49.831 [Debug] Disposed connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"' (4ms).
+2026-01-13 17:38:49.834 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:7095""""/api/v1/tracked-links""" - 201 null "application/json; charset=utf-8" 10109.6116ms
+2026-01-13 17:39:02.942 [Debug] Connection id ""0HNIJ1KU42L7E"" received FIN.
+2026-01-13 17:39:02.952 [Debug] Connection id ""0HNIJ1KU42L7E"" is closed. The last processed stream ID was 3.
+2026-01-13 17:39:02.952 [Debug] The connection queue processing loop for "0HNIJ1KU42L7E" completed.
+2026-01-13 17:39:02.954 [Debug] Connection id ""0HNIJ1KU42L7E"" sending FIN because: ""The Socket transport's send loop completed gracefully.""
+2026-01-13 17:39:02.972 [Debug] Connection id ""0HNIJ1KU42L7E"" stopped.
+2026-01-13 17:39:35.688 [Debug] Connection id ""0HNIJ1KU42L7F"" accepted.
+2026-01-13 17:39:35.708 [Debug] Connection id ""0HNIJ1KU42L7F"" started.
+2026-01-13 17:39:35.722 [Debug] Connection "0HNIJ1KU42L7F" established using the following protocol: Tls13
+2026-01-13 17:39:35.732 [Information] Request starting "HTTP/1.1" "POST" "https"://"localhost:7095""""/api/v1/tracked-links""" - "application/json" 58
+2026-01-13 17:39:35.736 [Debug] 1 candidate(s) found for the request path '"/api/v1/tracked-links"'
+2026-01-13 17:39:35.742 [Debug] Endpoint '"Api.Controllers.v1.Redirect.TrackedLinkController.Create (Tools)"' with route pattern '"api/v1/tracked-links"' is valid for the request path '"/api/v1/tracked-links"'
+2026-01-13 17:39:35.744 [Debug] Request matched endpoint '"Api.Controllers.v1.Redirect.TrackedLinkController.Create (Tools)"'
+2026-01-13 17:39:35.745 [Debug] Static files was skipped as the request already matched an endpoint.
+2026-01-13 17:39:35.746 [Information] Executing endpoint '"Api.Controllers.v1.Redirect.TrackedLinkController.Create (Tools)"'
+2026-01-13 17:39:35.747 [Information] Route matched with "{action = \"Create\", controller = \"TrackedLink\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Domain.WhatsApp.Redirect.TrackedLink)" on controller "Api.Controllers.v1.Redirect.TrackedLinkController" ("Tools").
+2026-01-13 17:39:35.749 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2026-01-13 17:39:35.750 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2026-01-13 17:39:35.752 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-01-13 17:39:35.757 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2026-01-13 17:39:35.759 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-01-13 17:39:35.762 [Debug] Executing controller factory for controller "Api.Controllers.v1.Redirect.TrackedLinkController" ("Tools")
+2026-01-13 17:39:35.768 [Debug] Entity Framework Core "9.0.6" initialized '"DataContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"9.0.4"' with options: "MigrationsAssembly=Persistence "
+2026-01-13 17:39:35.775 [Debug] Executed controller factory for controller "Api.Controllers.v1.Redirect.TrackedLinkController" ("Tools")
+2026-01-13 17:39:35.777 [Debug] Attempting to bind parameter '"trackedLink"' of type '"Domain.WhatsApp.Redirect.TrackedLink"' ...
+2026-01-13 17:39:35.780 [Debug] Attempting to bind parameter '"trackedLink"' of type '"Domain.WhatsApp.Redirect.TrackedLink"' using the name '""' in request data ...
+2026-01-13 17:39:35.782 [Debug] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter"' for content type '"application/json"'.
+2026-01-13 17:39:35.785 [Debug] Connection id ""0HNIJ1KU42L7F"", Request id ""0HNIJ1KU42L7F:00000001"": started reading request body.
+2026-01-13 17:39:35.790 [Debug] Connection id ""0HNIJ1KU42L7F"", Request id ""0HNIJ1KU42L7F:00000001"": done reading request body.
+2026-01-13 17:39:35.797 [Debug] JSON input formatter succeeded, deserializing to type '"Domain.WhatsApp.Redirect.TrackedLink"'
+2026-01-13 17:39:35.801 [Debug] Done attempting to bind parameter '"trackedLink"' of type '"Domain.WhatsApp.Redirect.TrackedLink"'.
+2026-01-13 17:39:35.808 [Debug] Done attempting to bind parameter '"trackedLink"' of type '"Domain.WhatsApp.Redirect.TrackedLink"'.
+2026-01-13 17:39:35.810 [Debug] Attempting to validate the bound parameter '"trackedLink"' of type '"Domain.WhatsApp.Redirect.TrackedLink"' ...
+2026-01-13 17:39:35.813 [Debug] Done attempting to validate the bound parameter '"trackedLink"' of type '"Domain.WhatsApp.Redirect.TrackedLink"'.
+2026-01-13 17:39:38.922 [Debug] Context '"DataContext"' started tracking '"TrackedLink"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-13 17:39:38.924 [Debug] SaveChanges starting for '"DataContext"'.
+2026-01-13 17:39:38.926 [Debug] DetectChanges starting for '"DataContext"'.
+2026-01-13 17:39:38.935 [Debug] DetectChanges completed for '"DataContext"'.
+2026-01-13 17:39:38.937 [Debug] Creating DbConnection.
+2026-01-13 17:39:38.938 [Debug] Created DbConnection. (1ms).
+2026-01-13 17:39:38.939 [Debug] Opening connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:39:38.941 [Debug] Opened connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:39:38.943 [Debug] Creating DbCommand for '"ExecuteReader"'.
+2026-01-13 17:39:38.953 [Debug] Created DbCommand for '"ExecuteReader"' (10ms).
+2026-01-13 17:39:38.955 [Debug] Initialized DbCommand for '"ExecuteReader"' (12ms).
+2026-01-13 17:39:38.957 [Debug] Executing DbCommand [Parameters=["@p0='?' (Size = 10), @p1='?' (DbType = Boolean), @p2='?' (Size = 15), @p3='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"TrackedLinks\" (\"Id\", \"Active\", \"TargetUrl\", \"VisitCount\")
+VALUES (@p0, @p1, @p2, @p3);"
+2026-01-13 17:39:38.969 [Error] Failed executing DbCommand ("12"ms) [Parameters=["@p0='?' (Size = 10), @p1='?' (DbType = Boolean), @p2='?' (Size = 15), @p3='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"TrackedLinks\" (\"Id\", \"Active\", \"TargetUrl\", \"VisitCount\")
+VALUES (@p0, @p1, @p2, @p3);"
+2026-01-13 17:39:38.979 [Debug] Closing connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:39:38.980 [Debug] Closed connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"' (1ms).
+2026-01-13 17:39:38.984 [Error] An exception occurred in the database while saving changes for context type '"Persistence.Context.Implementation.DataContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: TrackedLinks.Id'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)"
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: TrackedLinks.Id'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-01-13 17:39:40.478 [Error] Unhandled exception captured by IErrorLogger
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'UNIQUE constraint failed: TrackedLinks.Id'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Persistence.Context.Implementation.UnitOfWork.CommitAsync() in F:\Marketing\Persistence\Context\Implementation\UnitOfWork.cs:line 20
+   at Infrastructure.Repositories.Abstract.CRUD.Create.CreateRepository`1.CreateEntity(T entity) in F:\Marketing\Infrastructure\Repositories\Abstract\CRUD\Create\CreateRepository.cs:line 27
+2026-01-13 17:39:40.492 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2026-01-13 17:39:40.504 [Debug] No information found on request to perform content negotiation.
+2026-01-13 17:39:40.505 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2026-01-13 17:39:40.506 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2026-01-13 17:39:40.507 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter"' and content type '"text/plain"' to write the response.
+2026-01-13 17:39:40.508 [Information] Executing "BadRequestObjectResult", writing value of type '"System.String"'.
+2026-01-13 17:39:40.513 [Information] Executed action "Api.Controllers.v1.Redirect.TrackedLinkController.Create (Tools)" in 4751.1692ms
+2026-01-13 17:39:40.519 [Information] Executed endpoint '"Api.Controllers.v1.Redirect.TrackedLinkController.Create (Tools)"'
+2026-01-13 17:39:40.521 [Debug] Connection id ""0HNIJ1KU42L7F"" completed keep alive response.
+2026-01-13 17:39:40.522 [Debug] '"DataContext"' disposed.
+2026-01-13 17:39:40.526 [Debug] Disposing connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:39:40.548 [Debug] Disposed connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"' (22ms).
+2026-01-13 17:39:40.555 [Information] Request finished "HTTP/1.1" "POST" "https"://"localhost:7095""""/api/v1/tracked-links""" - 400 null "text/plain; charset=utf-8" 4822.6016ms
+2026-01-13 17:40:12.991 [Debug] Connection id ""0HNIJ1KU42L7F"" received FIN.
+2026-01-13 17:40:12.996 [Debug] Connection id ""0HNIJ1KU42L7F"" disconnecting.
+2026-01-13 17:40:13.001 [Debug] Connection id ""0HNIJ1KU42L7F"" sending FIN because: ""The Socket transport's send loop completed gracefully.""
+2026-01-13 17:40:13.010 [Debug] Connection id ""0HNIJ1KU42L7F"" stopped.
+2026-01-13 17:49:30.136 [Debug] Config reload token fired. Checking for changes...
+2026-01-13 17:49:37.809 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+2026-01-13 17:49:38.285 [Debug] Entity Framework Core "9.0.6" initialized '"DataContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"9.0.4"' with options: "MigrationsAssembly=Persistence "
+2026-01-13 17:49:38.386 [Debug] Creating DbConnection.
+2026-01-13 17:49:38.401 [Debug] Created DbConnection. (12ms).
+2026-01-13 17:49:38.407 [Debug] Migrating using database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:49:38.412 [Debug] Creating DbConnection.
+2026-01-13 17:49:38.415 [Debug] Created DbConnection. (3ms).
+2026-01-13 17:49:38.421 [Debug] Opening connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:49:38.433 [Debug] Opened connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:49:38.442 [Debug] Disposing connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:49:38.464 [Debug] Disposed connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"' (4ms).
+2026-01-13 17:49:38.468 [Debug] Opening connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:49:38.481 [Debug] Opened connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:49:38.485 [Information] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-01-13 17:49:38.494 [Debug] Creating DbCommand for '"ExecuteScalar"'.
+2026-01-13 17:49:38.502 [Debug] Created DbCommand for '"ExecuteScalar"' (8ms).
+2026-01-13 17:49:38.505 [Debug] Initialized DbCommand for '"ExecuteScalar"' (14ms).
+2026-01-13 17:49:38.513 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*) FROM \"sqlite_master\" WHERE \"name\" = '__EFMigrationsLock' AND \"type\" = 'table';"
+2026-01-13 17:49:38.532 [Information] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*) FROM \"sqlite_master\" WHERE \"name\" = '__EFMigrationsLock' AND \"type\" = 'table';"
+2026-01-13 17:49:38.537 [Debug] Creating DbCommand for '"ExecuteScalar"'.
+2026-01-13 17:49:38.539 [Debug] Created DbCommand for '"ExecuteScalar"' (1ms).
+2026-01-13 17:49:38.544 [Debug] Initialized DbCommand for '"ExecuteScalar"' (6ms).
+2026-01-13 17:49:38.546 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""INSERT OR IGNORE INTO \"__EFMigrationsLock\"(\"Id\", \"Timestamp\") VALUES(1, '2026-01-14 01:49:38.5364027+00:00');
+SELECT changes();"
+2026-01-13 17:49:38.558 [Information] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""INSERT OR IGNORE INTO \"__EFMigrationsLock\"(\"Id\", \"Timestamp\") VALUES(1, '2026-01-14 01:49:38.5364027+00:00');
+SELECT changes();"
+2026-01-13 17:49:38.625 [Debug] Beginning transaction with isolation level '"Unspecified"'.
+2026-01-13 17:49:38.630 [Debug] Began transaction with isolation level '"Serializable"'.
+2026-01-13 17:49:38.633 [Debug] Creating DbCommand for '"ExecuteNonQuery"'.
+2026-01-13 17:49:38.641 [Debug] Created DbCommand for '"ExecuteNonQuery"' (7ms).
+2026-01-13 17:49:38.643 [Debug] Initialized DbCommand for '"ExecuteNonQuery"' (10ms).
+2026-01-13 17:49:38.645 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE IF NOT EXISTS \"__EFMigrationsHistory\" (
+    \"MigrationId\" TEXT NOT NULL CONSTRAINT \"PK___EFMigrationsHistory\" PRIMARY KEY,
+    \"ProductVersion\" TEXT NOT NULL
+);"
+2026-01-13 17:49:38.648 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE IF NOT EXISTS \"__EFMigrationsHistory\" (
+    \"MigrationId\" TEXT NOT NULL CONSTRAINT \"PK___EFMigrationsHistory\" PRIMARY KEY,
+    \"ProductVersion\" TEXT NOT NULL
+);"
+2026-01-13 17:49:38.657 [Debug] Committing transaction.
+2026-01-13 17:49:38.659 [Debug] Committed transaction.
+2026-01-13 17:49:38.661 [Debug] Disposing transaction.
+2026-01-13 17:49:38.663 [Debug] Beginning transaction with isolation level '"Unspecified"'.
+2026-01-13 17:49:38.669 [Debug] Began transaction with isolation level '"Serializable"'.
+2026-01-13 17:49:38.672 [Debug] Creating DbConnection.
+2026-01-13 17:49:38.673 [Debug] Created DbConnection. (1ms).
+2026-01-13 17:49:38.675 [Debug] Opening connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:49:38.677 [Debug] Opened connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:49:38.679 [Debug] Disposing connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:49:38.684 [Debug] Disposed connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"' (4ms).
+2026-01-13 17:49:38.693 [Debug] Creating DbCommand for '"ExecuteScalar"'.
+2026-01-13 17:49:38.695 [Debug] Created DbCommand for '"ExecuteScalar"' (1ms).
+2026-01-13 17:49:38.700 [Debug] Initialized DbCommand for '"ExecuteScalar"' (6ms).
+2026-01-13 17:49:38.702 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*) FROM \"sqlite_master\" WHERE \"name\" = '__EFMigrationsHistory' AND \"type\" = 'table';"
+2026-01-13 17:49:38.704 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*) FROM \"sqlite_master\" WHERE \"name\" = '__EFMigrationsHistory' AND \"type\" = 'table';"
+2026-01-13 17:49:38.710 [Debug] Creating DbCommand for '"ExecuteReader"'.
+2026-01-13 17:49:38.720 [Debug] Created DbCommand for '"ExecuteReader"' (9ms).
+2026-01-13 17:49:38.722 [Debug] Initialized DbCommand for '"ExecuteReader"' (11ms).
+2026-01-13 17:49:38.731 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";"
+2026-01-13 17:49:38.741 [Information] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";"
+2026-01-13 17:49:38.756 [Debug] Closing data reader to '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:49:38.761 [Debug] A data reader for '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"' is being disposed after spending 6ms reading results.
+2026-01-13 17:49:38.772 [Information] No migrations were applied. The database is already up to date.
+2026-01-13 17:49:38.776 [Debug] Committing transaction.
+2026-01-13 17:49:38.777 [Debug] Committed transaction.
+2026-01-13 17:49:38.779 [Debug] Creating DbCommand for '"ExecuteScalar"'.
+2026-01-13 17:49:38.780 [Debug] Created DbCommand for '"ExecuteScalar"' (1ms).
+2026-01-13 17:49:38.782 [Debug] Initialized DbCommand for '"ExecuteScalar"' (3ms).
+2026-01-13 17:49:38.784 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DELETE FROM \"__EFMigrationsLock\";"
+2026-01-13 17:49:38.789 [Information] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DELETE FROM \"__EFMigrationsLock\";"
+2026-01-13 17:49:38.797 [Debug] Disposing transaction.
+2026-01-13 17:49:38.798 [Debug] Closing connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:49:38.803 [Debug] Closed connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"' (4ms).
+2026-01-13 17:49:38.903 [Debug] '"DataContext"' disposed.
+2026-01-13 17:49:38.906 [Debug] Disposing connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:49:38.908 [Debug] Disposed connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"' (2ms).
+2026-01-13 17:49:38.968 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2026-01-13 17:49:39.027 [Debug] Hosting starting
+2026-01-13 17:49:39.262 [Information] Now listening on: "https://localhost:7095"
+2026-01-13 17:49:39.264 [Information] Now listening on: "http://localhost:5038"
+2026-01-13 17:49:39.265 [Debug] Loaded hosting startup assembly "Tools"
+2026-01-13 17:49:39.266 [Debug] Loaded hosting startup assembly "Microsoft.WebTools.ApiEndpointDiscovery"
+2026-01-13 17:49:39.268 [Debug] Loaded hosting startup assembly "Microsoft.AspNetCore.Watch.BrowserRefresh"
+2026-01-13 17:49:39.276 [Debug] Loaded hosting startup assembly "Microsoft.WebTools.BrowserLink.Net"
+2026-01-13 17:49:39.456 [Information] Application started. Press Ctrl+C to shut down.
+2026-01-13 17:49:39.458 [Information] Hosting environment: "Development"
+2026-01-13 17:49:39.460 [Information] Content root path: "F:\Marketing\Tools"
+2026-01-13 17:49:39.461 [Debug] Hosting started
+2026-01-13 17:49:39.531 [Debug] Connection id ""0HNIJ1SN0MUAC"" received FIN.
+2026-01-13 17:49:39.562 [Debug] Connection id ""0HNIJ1SN0MUAC"" accepted.
+2026-01-13 17:49:39.565 [Debug] Connection id ""0HNIJ1SN0MUAC"" started.
+2026-01-13 17:49:39.582 [Debug] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2026-01-13 17:49:39.628 [Debug] Connection id ""0HNIJ1SN0MUAC"" stopped.
+2026-01-13 17:49:39.634 [Debug] Connection id ""0HNIJ1SN0MUAC"" sending FIN because: ""The Socket transport's send loop completed gracefully.""
+2026-01-13 17:49:39.716 [Debug] Connection id ""0HNIJ1SN0MUAD"" accepted.
+2026-01-13 17:49:39.720 [Debug] Connection id ""0HNIJ1SN0MUAD"" started.
+2026-01-13 17:49:39.763 [Debug] Connection "0HNIJ1SN0MUAD" established using the following protocol: Tls13
+2026-01-13 17:49:39.830 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7095""""/swagger/index.html""" - null null
+2026-01-13 17:49:39.951 [Debug] Wildcard detected, all requests with hosts will be allowed.
+2026-01-13 17:49:39.969 [Debug] No candidates found for the request path '"/swagger/index.html"'
+2026-01-13 17:49:39.971 [Debug] Request did not match any endpoints
+2026-01-13 17:49:40.039 [Debug] Response markup is scheduled to include Browser Link script injection.
+2026-01-13 17:49:40.046 [Debug] Response markup is scheduled to include browser refresh script injection.
+2026-01-13 17:49:40.078 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7095""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2026-01-13 17:49:40.079 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7095""""/_vs/browserLink""" - null null
+2026-01-13 17:49:40.079 [Debug] Response markup was updated to include Browser Link script injection.
+2026-01-13 17:49:40.097 [Debug] Response markup was updated to include browser refresh script injection.
+2026-01-13 17:49:40.096 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7095""""/_framework/aspnetcore-browser-refresh.js""" - 200 13746 "application/javascript; charset=utf-8" 11.1893ms
+2026-01-13 17:49:40.101 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7095""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 280.5227ms
+2026-01-13 17:49:40.138 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7095""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 59.8291ms
+2026-01-13 17:49:40.164 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7095""""/swagger/v1/swagger.json""" - null null
+2026-01-13 17:49:40.173 [Debug] No candidates found for the request path '"/swagger/v1/swagger.json"'
+2026-01-13 17:49:40.174 [Debug] Request did not match any endpoints
+2026-01-13 17:49:40.193 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7095""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 29.2137ms
+2026-01-13 17:50:03.200 [Information] Request starting "HTTP/2" "POST" "https"://"localhost:7095""""/api/v1/tracked-links""" - "application/json" 56
+2026-01-13 17:50:03.212 [Debug] 1 candidate(s) found for the request path '"/api/v1/tracked-links"'
+2026-01-13 17:50:03.224 [Debug] Endpoint '"Api.Controllers.v1.Redirect.TrackedLinkController.Create (Tools)"' with route pattern '"api/v1/tracked-links"' is valid for the request path '"/api/v1/tracked-links"'
+2026-01-13 17:50:03.233 [Debug] Request matched endpoint '"Api.Controllers.v1.Redirect.TrackedLinkController.Create (Tools)"'
+2026-01-13 17:50:03.237 [Debug] Static files was skipped as the request already matched an endpoint.
+2026-01-13 17:50:03.240 [Information] Executing endpoint '"Api.Controllers.v1.Redirect.TrackedLinkController.Create (Tools)"'
+2026-01-13 17:50:03.272 [Information] Route matched with "{action = \"Create\", controller = \"TrackedLink\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Domain.WhatsApp.Redirect.TrackedLink)" on controller "Api.Controllers.v1.Redirect.TrackedLinkController" ("Tools").
+2026-01-13 17:50:03.281 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2026-01-13 17:50:03.303 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2026-01-13 17:50:03.317 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-01-13 17:50:03.328 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2026-01-13 17:50:03.332 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-01-13 17:50:03.339 [Debug] Executing controller factory for controller "Api.Controllers.v1.Redirect.TrackedLinkController" ("Tools")
+2026-01-13 17:50:03.363 [Debug] Entity Framework Core "9.0.6" initialized '"DataContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"9.0.4"' with options: "MigrationsAssembly=Persistence "
+2026-01-13 17:50:03.377 [Debug] Executed controller factory for controller "Api.Controllers.v1.Redirect.TrackedLinkController" ("Tools")
+2026-01-13 17:50:03.392 [Debug] Attempting to bind parameter '"trackedLink"' of type '"Domain.WhatsApp.Redirect.TrackedLink"' ...
+2026-01-13 17:50:03.396 [Debug] Attempting to bind parameter '"trackedLink"' of type '"Domain.WhatsApp.Redirect.TrackedLink"' using the name '""' in request data ...
+2026-01-13 17:50:03.409 [Debug] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter"' for content type '"application/json"'.
+2026-01-13 17:50:03.430 [Debug] Connection id ""0HNIJ1SN0MUAD"", Request id ""0HNIJ1SN0MUAD:00000009"": started reading request body.
+2026-01-13 17:50:03.435 [Debug] Connection id ""0HNIJ1SN0MUAD"", Request id ""0HNIJ1SN0MUAD:00000009"": done reading request body.
+2026-01-13 17:50:03.449 [Debug] JSON input formatter succeeded, deserializing to type '"Domain.WhatsApp.Redirect.TrackedLink"'
+2026-01-13 17:50:03.451 [Debug] Done attempting to bind parameter '"trackedLink"' of type '"Domain.WhatsApp.Redirect.TrackedLink"'.
+2026-01-13 17:50:03.453 [Debug] Done attempting to bind parameter '"trackedLink"' of type '"Domain.WhatsApp.Redirect.TrackedLink"'.
+2026-01-13 17:50:03.455 [Debug] Attempting to validate the bound parameter '"trackedLink"' of type '"Domain.WhatsApp.Redirect.TrackedLink"' ...
+2026-01-13 17:50:03.468 [Debug] Done attempting to validate the bound parameter '"trackedLink"' of type '"Domain.WhatsApp.Redirect.TrackedLink"'.
+2026-01-13 17:50:05.844 [Debug] Context '"DataContext"' started tracking '"TrackedLink"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-13 17:50:05.852 [Debug] SaveChanges starting for '"DataContext"'.
+2026-01-13 17:50:05.858 [Debug] DetectChanges starting for '"DataContext"'.
+2026-01-13 17:50:05.870 [Debug] DetectChanges completed for '"DataContext"'.
+2026-01-13 17:50:05.930 [Debug] Creating DbConnection.
+2026-01-13 17:50:05.932 [Debug] Created DbConnection. (2ms).
+2026-01-13 17:50:05.935 [Debug] Opening connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:50:05.938 [Debug] Opened connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:50:05.945 [Debug] Creating DbCommand for '"ExecuteReader"'.
+2026-01-13 17:50:05.947 [Debug] Created DbCommand for '"ExecuteReader"' (1ms).
+2026-01-13 17:50:05.950 [Debug] Initialized DbCommand for '"ExecuteReader"' (4ms).
+2026-01-13 17:50:05.953 [Debug] Executing DbCommand [Parameters=["@p0='?' (Size = 8), @p1='?' (DbType = Boolean), @p2='?' (Size = 15), @p3='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"TrackedLinks\" (\"Id\", \"Active\", \"TargetUrl\", \"VisitCount\")
+VALUES (@p0, @p1, @p2, @p3);"
+2026-01-13 17:50:05.968 [Information] Executed DbCommand ("16"ms) [Parameters=["@p0='?' (Size = 8), @p1='?' (DbType = Boolean), @p2='?' (Size = 15), @p3='?' (DbType = Int64)"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"TrackedLinks\" (\"Id\", \"Active\", \"TargetUrl\", \"VisitCount\")
+VALUES (@p0, @p1, @p2, @p3);"
+2026-01-13 17:50:05.976 [Debug] Closing data reader to '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:50:05.980 [Debug] A data reader for '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"' is being disposed after spending 7ms reading results.
+2026-01-13 17:50:05.984 [Debug] Closing connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:50:05.986 [Debug] Closed connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"' (2ms).
+2026-01-13 17:50:06.003 [Debug] An entity of type '"TrackedLink"' tracked by '"DataContext"' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2026-01-13 17:50:06.018 [Debug] SaveChanges completed for '"DataContext"' with 1 entities written to the database.
+2026-01-13 17:50:08.387 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2026-01-13 17:50:08.393 [Debug] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2026-01-13 17:50:08.395 [Debug] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2026-01-13 17:50:08.396 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2026-01-13 17:50:08.397 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2026-01-13 17:50:08.398 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2026-01-13 17:50:08.406 [Information] Executing "CreatedAtActionResult", writing value of type '"Domain.WhatsApp.Redirect.TrackedLink"'.
+2026-01-13 17:50:08.446 [Debug] Found the endpoints ["Api.Controllers.v1.Redirect.TrackedLinkController.RedirectById (Tools)"] for address "(id=[promo123],action=[RedirectById],controller=[TrackedLink])"
+2026-01-13 17:50:08.451 [Debug] Successfully processed template "api/v1/tracked-links/{id}" for "Api.Controllers.v1.Redirect.TrackedLinkController.RedirectById (Tools)" resulting in "/api/v1/tracked-links/promo123" and ""
+2026-01-13 17:50:08.453 [Debug] Link generation succeeded for endpoints ["Api.Controllers.v1.Redirect.TrackedLinkController.RedirectById (Tools)"] with result "/api/v1/tracked-links/promo123"
+2026-01-13 17:50:10.176 [Information] Executed action "Api.Controllers.v1.Redirect.TrackedLinkController.Create (Tools)" in 6831.322ms
+2026-01-13 17:50:10.185 [Information] Executed endpoint '"Api.Controllers.v1.Redirect.TrackedLinkController.Create (Tools)"'
+2026-01-13 17:50:10.191 [Debug] '"DataContext"' disposed.
+2026-01-13 17:50:10.191 [Debug] Connection id ""0HNIJ1SN0MUAD"" received FIN.
+2026-01-13 17:50:10.197 [Debug] Disposing connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:50:10.199 [Debug] Connection id ""0HNIJ1SN0MUAD"" is closed. The last processed stream ID was 9.
+2026-01-13 17:50:10.206 [Debug] Disposed connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"' (9ms).
+2026-01-13 17:50:10.207 [Debug] Connection id ""0HNIJ1SN0MUAD"" sending FIN because: ""The Socket transport's send loop completed gracefully.""
+2026-01-13 17:50:10.209 [Information] Request finished "HTTP/2" "POST" "https"://"localhost:7095""""/api/v1/tracked-links""" - 201 null "application/json; charset=utf-8" 7009.1946ms
+2026-01-13 17:50:10.222 [Debug] The connection queue processing loop for "0HNIJ1SN0MUAD" completed.
+2026-01-13 17:50:10.225 [Debug] Connection id ""0HNIJ1SN0MUAD"" stopped.
+2026-01-13 17:50:22.268 [Debug] Connection id ""0HNIJ1SN0MUAE"" accepted.
+2026-01-13 17:50:22.270 [Debug] Connection id ""0HNIJ1SN0MUAE"" started.
+2026-01-13 17:50:22.280 [Debug] Connection "0HNIJ1SN0MUAE" established using the following protocol: Tls13
+2026-01-13 17:50:22.292 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7095""""/api/v1/tracked-links/promo123""" - null null
+2026-01-13 17:50:22.303 [Debug] 1 candidate(s) found for the request path '"/api/v1/tracked-links/promo123"'
+2026-01-13 17:50:22.305 [Debug] Endpoint '"Api.Controllers.v1.Redirect.TrackedLinkController.RedirectById (Tools)"' with route pattern '"api/v1/tracked-links/{id}"' is valid for the request path '"/api/v1/tracked-links/promo123"'
+2026-01-13 17:50:22.320 [Debug] Request matched endpoint '"Api.Controllers.v1.Redirect.TrackedLinkController.RedirectById (Tools)"'
+2026-01-13 17:50:22.321 [Debug] Static files was skipped as the request already matched an endpoint.
+2026-01-13 17:50:22.323 [Information] Executing endpoint '"Api.Controllers.v1.Redirect.TrackedLinkController.RedirectById (Tools)"'
+2026-01-13 17:50:22.334 [Information] Route matched with "{action = \"RedirectById\", controller = \"TrackedLink\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RedirectById(System.String)" on controller "Api.Controllers.v1.Redirect.TrackedLinkController" ("Tools").
+2026-01-13 17:50:22.336 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2026-01-13 17:50:22.340 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2026-01-13 17:50:22.346 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-01-13 17:50:22.351 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2026-01-13 17:50:22.353 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-01-13 17:50:22.359 [Debug] Executing controller factory for controller "Api.Controllers.v1.Redirect.TrackedLinkController" ("Tools")
+2026-01-13 17:50:22.410 [Debug] Entity Framework Core "9.0.6" initialized '"DataContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"9.0.4"' with options: "MigrationsAssembly=Persistence "
+2026-01-13 17:50:22.413 [Debug] Executed controller factory for controller "Api.Controllers.v1.Redirect.TrackedLinkController" ("Tools")
+2026-01-13 17:50:22.415 [Debug] Attempting to bind parameter '"id"' of type '"System.String"' ...
+2026-01-13 17:50:22.417 [Debug] Attempting to bind parameter '"id"' of type '"System.String"' using the name '"id"' in request data ...
+2026-01-13 17:50:22.427 [Debug] Done attempting to bind parameter '"id"' of type '"System.String"'.
+2026-01-13 17:50:22.439 [Debug] Done attempting to bind parameter '"id"' of type '"System.String"'.
+2026-01-13 17:50:22.441 [Debug] Attempting to validate the bound parameter '"id"' of type '"System.String"' ...
+2026-01-13 17:50:22.444 [Debug] Done attempting to validate the bound parameter '"id"' of type '"System.String"'.
+2026-01-13 17:50:22.504 [Debug] Compiling query expression: "
+"'"DbSet<TrackedLink>()
+    .Where(t => t.Id == __id_0)
+    .AsNoTracking()"'
+2026-01-13 17:50:22.740 [Debug] Generated query execution expression: "
+"'"queryContext => SingleQueryingEnumerable.Create<TrackedLink>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: TrackedLink.Id (string) Required PK AfterSave:Throw, 0], [Property: TrackedLink.Active (bool) Required, 1], [Property: TrackedLink.TargetUrl (string) Required MaxLength(150), 2], [Property: TrackedLink.VisitCount (long) Required, 3] }
+        SELECT t.Id, t.Active, t.TargetUrl, t.VisitCount
+        FROM TrackedLinks AS t
+        WHERE t.Id == @__id_0) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: TrackedLink.Id (string) Required PK AfterSave:Throw, 0], [Property: TrackedLink.Active (bool) Required, 1], [Property: TrackedLink.TargetUrl (string) Required MaxLength(150), 2], [Property: TrackedLink.VisitCount (long) Required, 3] }
+        SELECT t.Id, t.Active, t.TargetUrl, t.VisitCount
+        FROM TrackedLinks AS t
+        WHERE t.Id == @__id_0, 
+        False, 
+        new HashSet<string>(
+            new string[]{ }, 
+            StringComparer.Ordinal
+        )
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        TrackedLink entity;
+        entity = 
+        {
+            MaterializationContext materializationContext1;
+            IEntityType entityType1;
+            TrackedLink instance1;
+            materializationContext1 = new MaterializationContext(
+                [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                queryContext.Context
+            );
+            instance1 = default(TrackedLink);
+            (object)dataReader.GetString(0) != null ? 
+            {
+                ISnapshot shadowSnapshot1;
+                shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                entityType1 = [LIFTABLE Constant: EntityType: TrackedLink | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType(\"Domain.WhatsApp.Redirect.TrackedLink\")];
+                instance1 = switch (entityType1)
+                {
+                    case [LIFTABLE Constant: EntityType: TrackedLink | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType(\"Domain.WhatsApp.Redirect.TrackedLink\")]: 
+                        {
+                            return 
+                            {
+                                TrackedLink instance;
+                                instance = new TrackedLink(
+                                    dataReader.GetString(0), 
+                                    dataReader.GetString(2)
+                                );
+                                instance.<Active>k__BackingField = dataReader.GetBoolean(1);
+                                instance.<VisitCount>k__BackingField = dataReader.GetInt64(3);
+                                (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                    context: materializationContext1.Context, 
+                                    entity: instance, 
+                                    queryTrackingBehavior: NoTracking, 
+                                    structuralType: [LIFTABLE Constant: EntityType: TrackedLink | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType(\"Domain.WhatsApp.Redirect.TrackedLink\")]) : default(void);
+                                return instance;
+                            }}
+                    default: 
+                        default(TrackedLink)
+                }
+                ;
+                return instance1;
+            } : 
+            {
+                object[] keyValues1;
+                keyValues1 = new object[]{ (object)dataReader.GetString(0) };
+                return ShapedQueryCompilingExpressionVisitor.CreateNullKeyValueInNoTrackingQuery(
+                    entityType: [LIFTABLE Constant: EntityType: TrackedLink | Resolver: namelessParameter{3} => namelessParameter{3}.Dependencies.Model.FindEntityType(\"Domain.WhatsApp.Redirect.TrackedLink\")], 
+                    properties: [LIFTABLE Constant: List<RuntimeProperty> { Property: TrackedLink.Id (string) Required PK AfterSave:Throw } | Resolver: c => c.Dependencies.Model.FindEntityType(\"Domain.WhatsApp.Redirect.TrackedLink\").FindPrimaryKey().Properties], 
+                    keyValues: keyValues1);
+            };
+            return instance1;
+        };
+        return entity;
+    }, 
+    contextType: Persistence.Context.Implementation.DataContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)"'
+2026-01-13 17:50:22.773 [Debug] Creating DbConnection.
+2026-01-13 17:50:22.777 [Debug] Created DbConnection. (3ms).
+2026-01-13 17:50:22.779 [Debug] Opening connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:50:22.780 [Debug] Opened connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:50:22.782 [Debug] Creating DbCommand for '"ExecuteReader"'.
+2026-01-13 17:50:22.786 [Debug] Created DbCommand for '"ExecuteReader"' (3ms).
+2026-01-13 17:50:22.793 [Debug] Initialized DbCommand for '"ExecuteReader"' (10ms).
+2026-01-13 17:50:22.795 [Debug] Executing DbCommand [Parameters=["@__id_0='?' (Size = 8)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"Id\", \"t\".\"Active\", \"t\".\"TargetUrl\", \"t\".\"VisitCount\"
+FROM \"TrackedLinks\" AS \"t\"
+WHERE \"t\".\"Id\" = @__id_0"
+2026-01-13 17:50:22.797 [Information] Executed DbCommand ("3"ms) [Parameters=["@__id_0='?' (Size = 8)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"Id\", \"t\".\"Active\", \"t\".\"TargetUrl\", \"t\".\"VisitCount\"
+FROM \"TrackedLinks\" AS \"t\"
+WHERE \"t\".\"Id\" = @__id_0"
+2026-01-13 17:50:22.816 [Debug] Closing data reader to '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:50:22.820 [Debug] A data reader for '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"' is being disposed after spending 10ms reading results.
+2026-01-13 17:50:22.823 [Debug] Closing connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:50:22.824 [Debug] Closed connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"' (1ms).
+2026-01-13 17:50:22.830 [Information] Executing RedirectResult, redirecting to "www.youtube.com".
+2026-01-13 17:50:22.833 [Information] Executed action "Api.Controllers.v1.Redirect.TrackedLinkController.RedirectById (Tools)" in 473.3737ms
+2026-01-13 17:50:22.834 [Information] Executed endpoint '"Api.Controllers.v1.Redirect.TrackedLinkController.RedirectById (Tools)"'
+2026-01-13 17:50:22.836 [Debug] '"DataContext"' disposed.
+2026-01-13 17:50:22.842 [Debug] Disposing connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:50:22.842 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7095""""/api/v1/tracked-links/www.youtube.com""" - null null
+2026-01-13 17:50:22.848 [Debug] 1 candidate(s) found for the request path '"/api/v1/tracked-links/www.youtube.com"'
+2026-01-13 17:50:22.850 [Debug] Endpoint '"Api.Controllers.v1.Redirect.TrackedLinkController.RedirectById (Tools)"' with route pattern '"api/v1/tracked-links/{id}"' is valid for the request path '"/api/v1/tracked-links/www.youtube.com"'
+2026-01-13 17:50:22.845 [Debug] Disposed connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"' (3ms).
+2026-01-13 17:50:22.855 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7095""""/api/v1/tracked-links/promo123""" - 302 0 null 562.2578ms
+2026-01-13 17:50:22.853 [Debug] Request matched endpoint '"Api.Controllers.v1.Redirect.TrackedLinkController.RedirectById (Tools)"'
+2026-01-13 17:50:22.862 [Debug] Static files was skipped as the request already matched an endpoint.
+2026-01-13 17:50:22.865 [Information] Executing endpoint '"Api.Controllers.v1.Redirect.TrackedLinkController.RedirectById (Tools)"'
+2026-01-13 17:50:22.866 [Information] Route matched with "{action = \"RedirectById\", controller = \"TrackedLink\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RedirectById(System.String)" on controller "Api.Controllers.v1.Redirect.TrackedLinkController" ("Tools").
+2026-01-13 17:50:22.869 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2026-01-13 17:50:22.871 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2026-01-13 17:50:22.873 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-01-13 17:50:22.884 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2026-01-13 17:50:22.886 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-01-13 17:50:22.888 [Debug] Executing controller factory for controller "Api.Controllers.v1.Redirect.TrackedLinkController" ("Tools")
+2026-01-13 17:50:22.899 [Debug] Entity Framework Core "9.0.6" initialized '"DataContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"9.0.4"' with options: "MigrationsAssembly=Persistence "
+2026-01-13 17:50:22.916 [Debug] Executed controller factory for controller "Api.Controllers.v1.Redirect.TrackedLinkController" ("Tools")
+2026-01-13 17:50:22.918 [Debug] Attempting to bind parameter '"id"' of type '"System.String"' ...
+2026-01-13 17:50:22.920 [Debug] Attempting to bind parameter '"id"' of type '"System.String"' using the name '"id"' in request data ...
+2026-01-13 17:50:22.923 [Debug] Done attempting to bind parameter '"id"' of type '"System.String"'.
+2026-01-13 17:50:22.931 [Debug] Done attempting to bind parameter '"id"' of type '"System.String"'.
+2026-01-13 17:50:22.933 [Debug] Attempting to validate the bound parameter '"id"' of type '"System.String"' ...
+2026-01-13 17:50:22.935 [Debug] Done attempting to validate the bound parameter '"id"' of type '"System.String"'.
+2026-01-13 17:50:22.942 [Debug] Creating DbConnection.
+2026-01-13 17:50:22.945 [Debug] Created DbConnection. (2ms).
+2026-01-13 17:50:22.947 [Debug] Opening connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:50:22.948 [Debug] Opened connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:50:22.950 [Debug] Creating DbCommand for '"ExecuteReader"'.
+2026-01-13 17:50:22.952 [Debug] Created DbCommand for '"ExecuteReader"' (1ms).
+2026-01-13 17:50:22.956 [Debug] Initialized DbCommand for '"ExecuteReader"' (6ms).
+2026-01-13 17:50:22.961 [Debug] Executing DbCommand [Parameters=["@__id_0='?' (Size = 15)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"Id\", \"t\".\"Active\", \"t\".\"TargetUrl\", \"t\".\"VisitCount\"
+FROM \"TrackedLinks\" AS \"t\"
+WHERE \"t\".\"Id\" = @__id_0"
+2026-01-13 17:50:22.964 [Information] Executed DbCommand ("3"ms) [Parameters=["@__id_0='?' (Size = 15)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"Id\", \"t\".\"Active\", \"t\".\"TargetUrl\", \"t\".\"VisitCount\"
+FROM \"TrackedLinks\" AS \"t\"
+WHERE \"t\".\"Id\" = @__id_0"
+2026-01-13 17:50:22.967 [Debug] Closing data reader to '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:50:22.968 [Debug] A data reader for '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"' is being disposed after spending 1ms reading results.
+2026-01-13 17:50:22.969 [Debug] Closing connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:50:22.970 [Debug] Closed connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"' (1ms).
+2026-01-13 17:50:48.957 [Information] Executed action "Api.Controllers.v1.Redirect.TrackedLinkController.RedirectById (Tools)" in 26068.7414ms
+2026-01-13 17:50:48.961 [Information] Executed endpoint '"Api.Controllers.v1.Redirect.TrackedLinkController.RedirectById (Tools)"'
+2026-01-13 17:50:48.964 [Error] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Api.Controllers.v1.Redirect.TrackedLinkController.RedirectById(String id) in F:\Marketing\Tools\Controllers\api\v1\Redirect\TrackedLinkController.cs:line 60
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-01-13 17:50:49.010 [Debug] '"DataContext"' disposed.
+2026-01-13 17:50:49.013 [Debug] Disposing connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:50:49.022 [Debug] Disposed connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"' (8ms).
+2026-01-13 17:50:49.024 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7095""""/api/v1/tracked-links/www.youtube.com""" - 500 null "text/plain; charset=utf-8" 26185.2573ms
+2026-01-13 17:50:52.914 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7095""""/api/v1/tracked-links/promo123""" - null null
+2026-01-13 17:50:52.928 [Debug] 1 candidate(s) found for the request path '"/api/v1/tracked-links/promo123"'
+2026-01-13 17:50:52.936 [Debug] Endpoint '"Api.Controllers.v1.Redirect.TrackedLinkController.RedirectById (Tools)"' with route pattern '"api/v1/tracked-links/{id}"' is valid for the request path '"/api/v1/tracked-links/promo123"'
+2026-01-13 17:50:52.939 [Debug] Request matched endpoint '"Api.Controllers.v1.Redirect.TrackedLinkController.RedirectById (Tools)"'
+2026-01-13 17:50:52.942 [Debug] Static files was skipped as the request already matched an endpoint.
+2026-01-13 17:50:52.943 [Information] Executing endpoint '"Api.Controllers.v1.Redirect.TrackedLinkController.RedirectById (Tools)"'
+2026-01-13 17:50:52.949 [Information] Route matched with "{action = \"RedirectById\", controller = \"TrackedLink\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RedirectById(System.String)" on controller "Api.Controllers.v1.Redirect.TrackedLinkController" ("Tools").
+2026-01-13 17:50:52.952 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2026-01-13 17:50:52.953 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2026-01-13 17:50:52.955 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-01-13 17:50:52.958 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2026-01-13 17:50:52.959 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-01-13 17:50:52.968 [Debug] Executing controller factory for controller "Api.Controllers.v1.Redirect.TrackedLinkController" ("Tools")
+2026-01-13 17:50:52.971 [Debug] Entity Framework Core "9.0.6" initialized '"DataContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"9.0.4"' with options: "MigrationsAssembly=Persistence "
+2026-01-13 17:50:52.974 [Debug] Executed controller factory for controller "Api.Controllers.v1.Redirect.TrackedLinkController" ("Tools")
+2026-01-13 17:50:52.976 [Debug] Attempting to bind parameter '"id"' of type '"System.String"' ...
+2026-01-13 17:50:52.980 [Debug] Attempting to bind parameter '"id"' of type '"System.String"' using the name '"id"' in request data ...
+2026-01-13 17:50:52.988 [Debug] Done attempting to bind parameter '"id"' of type '"System.String"'.
+2026-01-13 17:50:52.990 [Debug] Done attempting to bind parameter '"id"' of type '"System.String"'.
+2026-01-13 17:50:52.992 [Debug] Attempting to validate the bound parameter '"id"' of type '"System.String"' ...
+2026-01-13 17:50:53.001 [Debug] Done attempting to validate the bound parameter '"id"' of type '"System.String"'.
+2026-01-13 17:50:58.690 [Debug] Creating DbConnection.
+2026-01-13 17:50:58.691 [Debug] Created DbConnection. (1ms).
+2026-01-13 17:50:58.693 [Debug] Opening connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:50:58.695 [Debug] Opened connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:50:58.696 [Debug] Creating DbCommand for '"ExecuteReader"'.
+2026-01-13 17:50:58.698 [Debug] Created DbCommand for '"ExecuteReader"' (1ms).
+2026-01-13 17:50:58.699 [Debug] Initialized DbCommand for '"ExecuteReader"' (2ms).
+2026-01-13 17:50:58.701 [Debug] Executing DbCommand [Parameters=["@__id_0='?' (Size = 8)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"Id\", \"t\".\"Active\", \"t\".\"TargetUrl\", \"t\".\"VisitCount\"
+FROM \"TrackedLinks\" AS \"t\"
+WHERE \"t\".\"Id\" = @__id_0"
+2026-01-13 17:50:58.708 [Information] Executed DbCommand ("7"ms) [Parameters=["@__id_0='?' (Size = 8)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"Id\", \"t\".\"Active\", \"t\".\"TargetUrl\", \"t\".\"VisitCount\"
+FROM \"TrackedLinks\" AS \"t\"
+WHERE \"t\".\"Id\" = @__id_0"
+2026-01-13 17:50:58.727 [Debug] Closing data reader to '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:50:58.729 [Debug] A data reader for '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"' is being disposed after spending 2ms reading results.
+2026-01-13 17:50:58.732 [Debug] Closing connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:50:58.737 [Debug] Closed connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"' (5ms).
+2026-01-13 17:51:07.082 [Information] Executing RedirectResult, redirecting to "www.youtube.com".
+2026-01-13 17:51:07.085 [Information] Executed action "Api.Controllers.v1.Redirect.TrackedLinkController.RedirectById (Tools)" in 14115.8449ms
+2026-01-13 17:51:07.086 [Information] Executed endpoint '"Api.Controllers.v1.Redirect.TrackedLinkController.RedirectById (Tools)"'
+2026-01-13 17:51:07.088 [Debug] '"DataContext"' disposed.
+2026-01-13 17:51:07.091 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7095""""/api/v1/tracked-links/www.youtube.com""" - null null
+2026-01-13 17:51:07.096 [Debug] 1 candidate(s) found for the request path '"/api/v1/tracked-links/www.youtube.com"'
+2026-01-13 17:51:07.093 [Debug] Disposing connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:51:07.099 [Debug] Disposed connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"' (6ms).
+2026-01-13 17:51:07.101 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7095""""/api/v1/tracked-links/promo123""" - 302 0 null 14187.5868ms
+2026-01-13 17:51:07.098 [Debug] Endpoint '"Api.Controllers.v1.Redirect.TrackedLinkController.RedirectById (Tools)"' with route pattern '"api/v1/tracked-links/{id}"' is valid for the request path '"/api/v1/tracked-links/www.youtube.com"'
+2026-01-13 17:51:07.107 [Debug] Request matched endpoint '"Api.Controllers.v1.Redirect.TrackedLinkController.RedirectById (Tools)"'
+2026-01-13 17:51:07.110 [Debug] Static files was skipped as the request already matched an endpoint.
+2026-01-13 17:51:07.111 [Information] Executing endpoint '"Api.Controllers.v1.Redirect.TrackedLinkController.RedirectById (Tools)"'
+2026-01-13 17:51:07.115 [Information] Route matched with "{action = \"RedirectById\", controller = \"TrackedLink\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RedirectById(System.String)" on controller "Api.Controllers.v1.Redirect.TrackedLinkController" ("Tools").
+2026-01-13 17:51:07.118 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2026-01-13 17:51:07.120 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2026-01-13 17:51:07.122 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-01-13 17:51:07.127 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2026-01-13 17:51:07.129 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-01-13 17:51:07.131 [Debug] Executing controller factory for controller "Api.Controllers.v1.Redirect.TrackedLinkController" ("Tools")
+2026-01-13 17:51:07.134 [Debug] Entity Framework Core "9.0.6" initialized '"DataContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"9.0.4"' with options: "MigrationsAssembly=Persistence "
+2026-01-13 17:51:07.136 [Debug] Executed controller factory for controller "Api.Controllers.v1.Redirect.TrackedLinkController" ("Tools")
+2026-01-13 17:51:07.138 [Debug] Attempting to bind parameter '"id"' of type '"System.String"' ...
+2026-01-13 17:51:07.143 [Debug] Attempting to bind parameter '"id"' of type '"System.String"' using the name '"id"' in request data ...
+2026-01-13 17:51:07.149 [Debug] Done attempting to bind parameter '"id"' of type '"System.String"'.
+2026-01-13 17:51:07.151 [Debug] Done attempting to bind parameter '"id"' of type '"System.String"'.
+2026-01-13 17:51:07.153 [Debug] Attempting to validate the bound parameter '"id"' of type '"System.String"' ...
+2026-01-13 17:51:07.155 [Debug] Done attempting to validate the bound parameter '"id"' of type '"System.String"'.
+2026-01-13 17:51:07.857 [Debug] Creating DbConnection.
+2026-01-13 17:51:07.859 [Debug] Created DbConnection. (1ms).
+2026-01-13 17:51:07.860 [Debug] Opening connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:51:07.862 [Debug] Opened connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:51:07.869 [Debug] Creating DbCommand for '"ExecuteReader"'.
+2026-01-13 17:51:07.870 [Debug] Created DbCommand for '"ExecuteReader"' (1ms).
+2026-01-13 17:51:07.872 [Debug] Initialized DbCommand for '"ExecuteReader"' (3ms).
+2026-01-13 17:51:07.874 [Debug] Executing DbCommand [Parameters=["@__id_0='?' (Size = 15)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"Id\", \"t\".\"Active\", \"t\".\"TargetUrl\", \"t\".\"VisitCount\"
+FROM \"TrackedLinks\" AS \"t\"
+WHERE \"t\".\"Id\" = @__id_0"
+2026-01-13 17:51:07.877 [Information] Executed DbCommand ("3"ms) [Parameters=["@__id_0='?' (Size = 15)"], CommandType='Text', CommandTimeout='30']"
+""SELECT \"t\".\"Id\", \"t\".\"Active\", \"t\".\"TargetUrl\", \"t\".\"VisitCount\"
+FROM \"TrackedLinks\" AS \"t\"
+WHERE \"t\".\"Id\" = @__id_0"
+2026-01-13 17:51:07.887 [Debug] Closing data reader to '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:51:07.888 [Debug] A data reader for '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"' is being disposed after spending 1ms reading results.
+2026-01-13 17:51:07.891 [Debug] Closing connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:51:07.892 [Debug] Closed connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"' (1ms).
+2026-01-13 17:51:09.858 [Information] Executed action "Api.Controllers.v1.Redirect.TrackedLinkController.RedirectById (Tools)" in 2726.9192ms
+2026-01-13 17:51:09.867 [Information] Executed endpoint '"Api.Controllers.v1.Redirect.TrackedLinkController.RedirectById (Tools)"'
+2026-01-13 17:51:09.875 [Error] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Api.Controllers.v1.Redirect.TrackedLinkController.RedirectById(String id) in F:\Marketing\Tools\Controllers\api\v1\Redirect\TrackedLinkController.cs:line 60
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-01-13 17:51:09.889 [Debug] '"DataContext"' disposed.
+2026-01-13 17:51:09.892 [Debug] Disposing connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"'.
+2026-01-13 17:51:09.893 [Debug] Disposed connection to database '"main"' on server '"E:\Marketing-Logs\db\Marketing.db"' (1ms).
+2026-01-13 17:51:09.904 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7095""""/api/v1/tracked-links/www.youtube.com""" - 500 null "text/plain; charset=utf-8" 2813.0017ms
+2026-01-13 19:46:12.167 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+2026-01-13 19:46:16.554 [Debug] Entity Framework Core "9.0.6" initialized '"DataContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"9.0.4"' with options: "MigrationsAssembly=Persistence "
+2026-01-13 19:46:16.690 [Debug] Creating DbConnection.
+2026-01-13 19:46:16.721 [Debug] Created DbConnection. (28ms).
+2026-01-13 19:46:16.730 [Debug] Migrating using database '"main"' on server '"D:\home\data\Marketing\db\Marketing.db"'.
+2026-01-13 19:46:16.746 [Debug] Creating DbConnection.
+2026-01-13 19:46:16.752 [Debug] Created DbConnection. (6ms).
+2026-01-13 19:46:16.757 [Debug] Opening connection to database '"main"' on server '"D:\home\data\Marketing\db\Marketing.db"'.
+2026-01-13 19:46:16.778 [Debug] An error occurred using the connection to database '"main"' on server '"D:\home\data\Marketing\db\Marketing.db"'.
+2026-01-13 19:46:16.786 [Debug] Disposing connection to database '"main"' on server '"D:\home\data\Marketing\db\Marketing.db"'.
+2026-01-13 19:46:16.796 [Debug] Disposed connection to database '"main"' on server '"D:\home\data\Marketing\db\Marketing.db"' (6ms).
+2026-01-13 19:46:16.803 [Debug] Opening connection to database '"main"' on server '"D:\home\data\Marketing\db\Marketing.db"'.
+2026-01-13 19:46:16.813 [Error] An error occurred using the connection to database '"main"' on server '"D:\home\data\Marketing\db\Marketing.db"'.
+2026-01-13 19:51:07.382 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+2026-01-13 19:51:13.441 [Debug] Entity Framework Core "9.0.6" initialized '"DataContext"' using provider '"Microsoft.EntityFrameworkCore.Sqlite":"9.0.4"' with options: "MigrationsAssembly=Persistence "
+2026-01-13 19:51:13.654 [Debug] Creating DbConnection.
+2026-01-13 19:51:13.680 [Debug] Created DbConnection. (20ms).
+2026-01-13 19:51:13.691 [Debug] Migrating using database '"main"' on server '"D:\db\Marketing.db"'.
+2026-01-13 19:51:13.712 [Debug] Creating DbConnection.
+2026-01-13 19:51:13.721 [Debug] Created DbConnection. (9ms).
+2026-01-13 19:51:13.728 [Debug] Opening connection to database '"main"' on server '"D:\db\Marketing.db"'.
+2026-01-13 19:51:13.750 [Debug] An error occurred using the connection to database '"main"' on server '"D:\db\Marketing.db"'.
+2026-01-13 19:51:13.757 [Debug] Disposing connection to database '"main"' on server '"D:\db\Marketing.db"'.
+2026-01-13 19:51:13.771 [Debug] Disposed connection to database '"main"' on server '"D:\db\Marketing.db"' (6ms).
+2026-01-13 19:51:13.780 [Debug] Opening connection to database '"main"' on server '"D:\db\Marketing.db"'.
+2026-01-13 19:51:13.804 [Debug] Opened connection to database '"main"' on server '"D:\db\Marketing.db"'.
+2026-01-13 19:51:13.822 [Debug] Creating DbCommand for '"ExecuteNonQuery"'.
+2026-01-13 19:51:13.834 [Debug] Created DbCommand for '"ExecuteNonQuery"' (13ms).
+2026-01-13 19:51:13.841 [Debug] Initialized DbCommand for '"ExecuteNonQuery"' (23ms).
+2026-01-13 19:51:13.867 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""PRAGMA journal_mode = 'wal';"
+2026-01-13 19:51:13.931 [Information] Executed DbCommand ("54"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""PRAGMA journal_mode = 'wal';"
+2026-01-13 19:51:13.944 [Debug] Closing connection to database '"main"' on server '"D:\db\Marketing.db"'.
+2026-01-13 19:51:13.955 [Debug] Closed connection to database '"main"' on server '"D:\db\Marketing.db"' (12ms).
+2026-01-13 19:51:13.985 [Debug] Opening connection to database '"main"' on server '"D:\db\Marketing.db"'.
+2026-01-13 19:51:14.007 [Debug] Opened connection to database '"main"' on server '"D:\db\Marketing.db"'.
+2026-01-13 19:51:14.015 [Information] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2026-01-13 19:51:14.027 [Debug] Creating DbCommand for '"ExecuteScalar"'.
+2026-01-13 19:51:14.034 [Debug] Created DbCommand for '"ExecuteScalar"' (6ms).
+2026-01-13 19:51:14.040 [Debug] Initialized DbCommand for '"ExecuteScalar"' (12ms).
+2026-01-13 19:51:14.045 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*) FROM \"sqlite_master\" WHERE \"name\" = '__EFMigrationsLock' AND \"type\" = 'table';"
+2026-01-13 19:51:14.057 [Information] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*) FROM \"sqlite_master\" WHERE \"name\" = '__EFMigrationsLock' AND \"type\" = 'table';"
+2026-01-13 19:51:14.065 [Debug] Creating DbCommand for '"ExecuteNonQuery"'.
+2026-01-13 19:51:14.072 [Debug] Created DbCommand for '"ExecuteNonQuery"' (7ms).
+2026-01-13 19:51:14.076 [Debug] Initialized DbCommand for '"ExecuteNonQuery"' (11ms).
+2026-01-13 19:51:14.082 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE IF NOT EXISTS \"__EFMigrationsLock\" (
+    \"Id\" INTEGER NOT NULL CONSTRAINT \"PK___EFMigrationsLock\" PRIMARY KEY,
+    \"Timestamp\" TEXT NOT NULL
+);"
+2026-01-13 19:51:14.099 [Information] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE IF NOT EXISTS \"__EFMigrationsLock\" (
+    \"Id\" INTEGER NOT NULL CONSTRAINT \"PK___EFMigrationsLock\" PRIMARY KEY,
+    \"Timestamp\" TEXT NOT NULL
+);"
+2026-01-13 19:51:14.109 [Debug] Creating DbCommand for '"ExecuteScalar"'.
+2026-01-13 19:51:14.114 [Debug] Created DbCommand for '"ExecuteScalar"' (4ms).
+2026-01-13 19:51:14.118 [Debug] Initialized DbCommand for '"ExecuteScalar"' (8ms).
+2026-01-13 19:51:14.121 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""INSERT OR IGNORE INTO \"__EFMigrationsLock\"(\"Id\", \"Timestamp\") VALUES(1, '2026-01-14 03:51:14.1057554+00:00');
+SELECT changes();"
+2026-01-13 19:51:14.129 [Information] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""INSERT OR IGNORE INTO \"__EFMigrationsLock\"(\"Id\", \"Timestamp\") VALUES(1, '2026-01-14 03:51:14.1057554+00:00');
+SELECT changes();"
+2026-01-13 19:51:14.232 [Debug] Beginning transaction with isolation level '"Unspecified"'.
+2026-01-13 19:51:14.242 [Debug] Began transaction with isolation level '"Serializable"'.
+2026-01-13 19:51:14.249 [Debug] Creating DbCommand for '"ExecuteNonQuery"'.
+2026-01-13 19:51:14.256 [Debug] Created DbCommand for '"ExecuteNonQuery"' (6ms).
+2026-01-13 19:51:14.262 [Debug] Initialized DbCommand for '"ExecuteNonQuery"' (12ms).
+2026-01-13 19:51:14.265 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE IF NOT EXISTS \"__EFMigrationsHistory\" (
+    \"MigrationId\" TEXT NOT NULL CONSTRAINT \"PK___EFMigrationsHistory\" PRIMARY KEY,
+    \"ProductVersion\" TEXT NOT NULL
+);"
+2026-01-13 19:51:14.272 [Information] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE IF NOT EXISTS \"__EFMigrationsHistory\" (
+    \"MigrationId\" TEXT NOT NULL CONSTRAINT \"PK___EFMigrationsHistory\" PRIMARY KEY,
+    \"ProductVersion\" TEXT NOT NULL
+);"
+2026-01-13 19:51:14.280 [Debug] Committing transaction.
+2026-01-13 19:51:14.288 [Debug] Committed transaction.
+2026-01-13 19:51:14.293 [Debug] Disposing transaction.
+2026-01-13 19:51:14.297 [Debug] Beginning transaction with isolation level '"Unspecified"'.
+2026-01-13 19:51:14.301 [Debug] Began transaction with isolation level '"Serializable"'.
+2026-01-13 19:51:14.306 [Debug] Creating DbConnection.
+2026-01-13 19:51:14.308 [Debug] Created DbConnection. (1ms).
+2026-01-13 19:51:14.314 [Debug] Opening connection to database '"main"' on server '"D:\db\Marketing.db"'.
+2026-01-13 19:51:14.320 [Debug] Opened connection to database '"main"' on server '"D:\db\Marketing.db"'.
+2026-01-13 19:51:14.330 [Debug] Disposing connection to database '"main"' on server '"D:\db\Marketing.db"'.
+2026-01-13 19:51:14.335 [Debug] Disposed connection to database '"main"' on server '"D:\db\Marketing.db"' (5ms).
+2026-01-13 19:51:14.340 [Debug] Creating DbCommand for '"ExecuteScalar"'.
+2026-01-13 19:51:14.346 [Debug] Created DbCommand for '"ExecuteScalar"' (5ms).
+2026-01-13 19:51:14.352 [Debug] Initialized DbCommand for '"ExecuteScalar"' (12ms).
+2026-01-13 19:51:14.357 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*) FROM \"sqlite_master\" WHERE \"name\" = '__EFMigrationsHistory' AND \"type\" = 'table';"
+2026-01-13 19:51:14.363 [Information] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*) FROM \"sqlite_master\" WHERE \"name\" = '__EFMigrationsHistory' AND \"type\" = 'table';"
+2026-01-13 19:51:14.371 [Debug] Creating DbCommand for '"ExecuteReader"'.
+2026-01-13 19:51:14.373 [Debug] Created DbCommand for '"ExecuteReader"' (1ms).
+2026-01-13 19:51:14.376 [Debug] Initialized DbCommand for '"ExecuteReader"' (4ms).
+2026-01-13 19:51:14.379 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";"
+2026-01-13 19:51:14.386 [Information] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";"
+2026-01-13 19:51:14.396 [Debug] Closing data reader to '"main"' on server '"D:\db\Marketing.db"'.
+2026-01-13 19:51:14.402 [Debug] A data reader for '"main"' on server '"D:\db\Marketing.db"' is being disposed after spending 9ms reading results.
+2026-01-13 19:51:14.419 [Information] Applying migration '"20260112035756_InitialCreate"'.
+2026-01-13 19:51:14.440 [Debug] Creating DbCommand for '"ExecuteNonQuery"'.
+2026-01-13 19:51:14.446 [Debug] Created DbCommand for '"ExecuteNonQuery"' (5ms).
+2026-01-13 19:51:14.450 [Debug] Initialized DbCommand for '"ExecuteNonQuery"' (9ms).
+2026-01-13 19:51:14.456 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE \"ErrorLogs\" (
+    \"Id\" TEXT NOT NULL CONSTRAINT \"PK_ErrorLogs\" PRIMARY KEY,
+    \"Timestamp\" TEXT NOT NULL,
+    \"Level\" TEXT NOT NULL,
+    \"Message\" TEXT NOT NULL,
+    \"ExceptionType\" TEXT NOT NULL,
+    \"StackTrace\" TEXT NOT NULL,
+    \"Context\" TEXT NOT NULL,
+    \"Active\" INTEGER NOT NULL
+);"
+2026-01-13 19:51:14.463 [Information] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE \"ErrorLogs\" (
+    \"Id\" TEXT NOT NULL CONSTRAINT \"PK_ErrorLogs\" PRIMARY KEY,
+    \"Timestamp\" TEXT NOT NULL,
+    \"Level\" TEXT NOT NULL,
+    \"Message\" TEXT NOT NULL,
+    \"ExceptionType\" TEXT NOT NULL,
+    \"StackTrace\" TEXT NOT NULL,
+    \"Context\" TEXT NOT NULL,
+    \"Active\" INTEGER NOT NULL
+);"
+2026-01-13 19:51:14.472 [Debug] Creating DbCommand for '"ExecuteNonQuery"'.
+2026-01-13 19:51:14.477 [Debug] Created DbCommand for '"ExecuteNonQuery"' (4ms).
+2026-01-13 19:51:14.482 [Debug] Initialized DbCommand for '"ExecuteNonQuery"' (9ms).
+2026-01-13 19:51:14.485 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE \"TrackedLinks\" (
+    \"Id\" TEXT NOT NULL CONSTRAINT \"PK_TrackedLinks\" PRIMARY KEY,
+    \"TargetUrl\" TEXT NOT NULL,
+    \"VisitCount\" INTEGER NOT NULL,
+    \"Active\" INTEGER NOT NULL
+);"
+2026-01-13 19:51:14.490 [Information] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE \"TrackedLinks\" (
+    \"Id\" TEXT NOT NULL CONSTRAINT \"PK_TrackedLinks\" PRIMARY KEY,
+    \"TargetUrl\" TEXT NOT NULL,
+    \"VisitCount\" INTEGER NOT NULL,
+    \"Active\" INTEGER NOT NULL
+);"
+2026-01-13 19:51:14.497 [Debug] Creating DbCommand for '"ExecuteNonQuery"'.
+2026-01-13 19:51:14.499 [Debug] Created DbCommand for '"ExecuteNonQuery"' (2ms).
+2026-01-13 19:51:14.503 [Debug] Initialized DbCommand for '"ExecuteNonQuery"' (6ms).
+2026-01-13 19:51:14.506 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"__EFMigrationsHistory\" (\"MigrationId\", \"ProductVersion\")
+VALUES ('20260112035756_InitialCreate', '9.0.6');"
+2026-01-13 19:51:14.511 [Information] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"__EFMigrationsHistory\" (\"MigrationId\", \"ProductVersion\")
+VALUES ('20260112035756_InitialCreate', '9.0.6');"
+2026-01-13 19:51:14.517 [Debug] Committing transaction.
+2026-01-13 19:51:14.522 [Debug] Committed transaction.
+2026-01-13 19:51:14.524 [Debug] Creating DbCommand for '"ExecuteScalar"'.
+2026-01-13 19:51:14.527 [Debug] Created DbCommand for '"ExecuteScalar"' (2ms).
+2026-01-13 19:51:14.531 [Debug] Initialized DbCommand for '"ExecuteScalar"' (6ms).
+2026-01-13 19:51:14.535 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DELETE FROM \"__EFMigrationsLock\";"
+2026-01-13 19:51:14.543 [Information] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""DELETE FROM \"__EFMigrationsLock\";"
+2026-01-13 19:51:14.555 [Debug] Disposing transaction.
+2026-01-13 19:51:14.560 [Debug] Closing connection to database '"main"' on server '"D:\db\Marketing.db"'.
+2026-01-13 19:51:14.564 [Debug] Closed connection to database '"main"' on server '"D:\db\Marketing.db"' (4ms).
+2026-01-13 19:51:14.804 [Debug] '"DataContext"' disposed.
+2026-01-13 19:51:14.809 [Debug] Disposing connection to database '"main"' on server '"D:\db\Marketing.db"'.
+2026-01-13 19:51:14.815 [Debug] Disposed connection to database '"main"' on server '"D:\db\Marketing.db"' (5ms).
+2026-01-13 19:51:14.937 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2026-01-13 19:51:15.046 [Debug] Hosting starting
+2026-01-13 19:51:15.589 [Information] Now listening on: "https://localhost:7095"
+2026-01-13 19:51:15.595 [Information] Now listening on: "http://localhost:5038"
+2026-01-13 19:51:15.597 [Debug] Loaded hosting startup assembly "Tools"
+2026-01-13 19:51:15.599 [Debug] Loaded hosting startup assembly "Microsoft.WebTools.ApiEndpointDiscovery"
+2026-01-13 19:51:15.604 [Debug] Loaded hosting startup assembly "Microsoft.AspNetCore.Watch.BrowserRefresh"
+2026-01-13 19:51:15.606 [Debug] Loaded hosting startup assembly "Microsoft.WebTools.BrowserLink.Net"
+2026-01-13 19:51:15.726 [Information] Application started. Press Ctrl+C to shut down.
+2026-01-13 19:51:15.741 [Information] Hosting environment: "Development"
+2026-01-13 19:51:15.746 [Information] Content root path: "F:\Marketing\Tools"
+2026-01-13 19:51:15.748 [Debug] Hosting started
+2026-01-13 19:51:15.968 [Debug] Connection id ""0HNIJ40LGURST"" accepted.
+2026-01-13 19:51:15.972 [Debug] Connection id ""0HNIJ40LGURST"" started.
+2026-01-13 19:51:15.990 [Debug] Connection id ""0HNIJ40LGURST"" received FIN.
+2026-01-13 19:51:16.024 [Debug] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2026-01-13 19:51:16.099 [Debug] Connection id ""0HNIJ40LGURST"" stopped.
+2026-01-13 19:51:16.119 [Debug] Connection id ""0HNIJ40LGURST"" sending FIN because: ""The Socket transport's send loop completed gracefully.""
+2026-01-13 19:51:16.353 [Debug] Connection id ""0HNIJ40LGURSU"" accepted.
+2026-01-13 19:51:16.357 [Debug] Connection id ""0HNIJ40LGURSU"" started.
+2026-01-13 19:51:16.368 [Debug] Connection id ""0HNIJ40LGURSV"" accepted.
+2026-01-13 19:51:16.374 [Debug] Connection id ""0HNIJ40LGURSV"" started.
+2026-01-13 19:51:16.423 [Debug] Connection id ""0HNIJ40LGURSV"" received FIN.
+2026-01-13 19:51:16.454 [Debug] Connection "0HNIJ40LGURSV" established using the following protocol: Tls13
+2026-01-13 19:51:16.454 [Debug] Connection "0HNIJ40LGURSU" established using the following protocol: Tls13
+2026-01-13 19:51:16.505 [Debug] Connection id ""0HNIJ40LGURSV"" is closed. The last processed stream ID was 0.
+2026-01-13 19:51:16.511 [Debug] Connection id ""0HNIJ40LGURSV"" sending FIN because: ""The Socket transport's send loop completed gracefully.""
+2026-01-13 19:51:16.521 [Debug] The connection queue processing loop for "0HNIJ40LGURSV" completed.
+2026-01-13 19:51:16.527 [Debug] Connection id ""0HNIJ40LGURSV"" stopped.
+2026-01-13 19:51:16.585 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7095""""/swagger/index.html""" - null null
+2026-01-13 19:51:16.880 [Debug] Wildcard detected, all requests with hosts will be allowed.
+2026-01-13 19:51:16.926 [Debug] No candidates found for the request path '"/swagger/index.html"'
+2026-01-13 19:51:16.931 [Debug] Request did not match any endpoints
+2026-01-13 19:51:17.032 [Debug] Response markup is scheduled to include Browser Link script injection.
+2026-01-13 19:51:17.043 [Debug] Response markup is scheduled to include browser refresh script injection.
+2026-01-13 19:51:17.096 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7095""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2026-01-13 19:51:17.098 [Debug] Response markup was updated to include Browser Link script injection.
+2026-01-13 19:51:17.114 [Debug] Response markup was updated to include browser refresh script injection.
+2026-01-13 19:51:17.120 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7095""""/_vs/browserLink""" - null null
+2026-01-13 19:51:17.128 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7095""""/_framework/aspnetcore-browser-refresh.js""" - 200 13746 "application/javascript; charset=utf-8" 29.0768ms
+2026-01-13 19:51:17.128 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7095""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 557.4545ms
+2026-01-13 19:51:17.237 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7095""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 117.4568ms
+2026-01-13 19:51:17.282 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7095""""/swagger/v1/swagger.json""" - null null
+2026-01-13 19:51:17.304 [Debug] No candidates found for the request path '"/swagger/v1/swagger.json"'
+2026-01-13 19:51:17.314 [Debug] Request did not match any endpoints
+2026-01-13 19:51:17.353 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7095""""/swagger/v1/swagger.json""" - 200 null "application/json;charset=utf-8" 71.135ms
+2026-01-13 19:51:28.010 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7095""""/WeatherForecast""" - null null
+2026-01-13 19:51:29.015 [Debug] 1 candidate(s) found for the request path '"/WeatherForecast"'
+2026-01-13 19:51:29.240 [Debug] Endpoint '"roots.Controllers.WeatherForecastController.Get (Tools)"' with route pattern '"WeatherForecast"' is valid for the request path '"/WeatherForecast"'
+2026-01-13 19:51:29.404 [Debug] Request matched endpoint '"roots.Controllers.WeatherForecastController.Get (Tools)"'
+2026-01-13 19:51:29.834 [Debug] Static files was skipped as the request already matched an endpoint.
+2026-01-13 19:51:30.122 [Information] Executing endpoint '"roots.Controllers.WeatherForecastController.Get (Tools)"'
+2026-01-13 19:51:30.506 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[roots.WeatherForecast] Get()" on controller "roots.Controllers.WeatherForecastController" ("Tools").
+2026-01-13 19:51:30.516 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2026-01-13 19:51:30.527 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2026-01-13 19:51:30.531 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-01-13 19:51:30.538 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2026-01-13 19:51:30.544 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-01-13 19:51:30.552 [Debug] Executing controller factory for controller "roots.Controllers.WeatherForecastController" ("Tools")
+2026-01-13 19:51:30.557 [Debug] Executed controller factory for controller "roots.Controllers.WeatherForecastController" ("Tools")
+2026-01-13 19:51:30.571 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2026-01-13 19:51:30.581 [Debug] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2026-01-13 19:51:30.586 [Debug] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2026-01-13 19:51:30.590 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2026-01-13 19:51:30.593 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2026-01-13 19:51:30.597 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2026-01-13 19:51:30.602 [Information] Executing "ObjectResult", writing value of type '"roots.WeatherForecast[]"'.
+2026-01-13 19:51:30.639 [Information] Executed action "roots.Controllers.WeatherForecastController.Get (Tools)" in 84.9086ms
+2026-01-13 19:51:30.644 [Information] Executed endpoint '"roots.Controllers.WeatherForecastController.Get (Tools)"'
+2026-01-13 19:51:30.646 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7095""""/WeatherForecast""" - 200 null "application/json; charset=utf-8" 2637.01ms
+2026-01-13 19:51:39.690 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7095""""/WeatherForecast""" - null null
+2026-01-13 19:51:39.743 [Debug] 1 candidate(s) found for the request path '"/WeatherForecast"'
+2026-01-13 19:51:39.757 [Debug] Endpoint '"roots.Controllers.WeatherForecastController.Get (Tools)"' with route pattern '"WeatherForecast"' is valid for the request path '"/WeatherForecast"'
+2026-01-13 19:51:39.764 [Debug] Request matched endpoint '"roots.Controllers.WeatherForecastController.Get (Tools)"'
+2026-01-13 19:51:39.770 [Debug] Static files was skipped as the request already matched an endpoint.
+2026-01-13 19:51:39.773 [Information] Executing endpoint '"roots.Controllers.WeatherForecastController.Get (Tools)"'
+2026-01-13 19:51:39.782 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[roots.WeatherForecast] Get()" on controller "roots.Controllers.WeatherForecastController" ("Tools").
+2026-01-13 19:51:39.790 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+2026-01-13 19:51:39.800 [Debug] Execution plan of "resource" filters (in the following order): ["None"]
+2026-01-13 19:51:39.806 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2026-01-13 19:51:39.816 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+2026-01-13 19:51:39.822 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2026-01-13 19:51:39.830 [Debug] Executing controller factory for controller "roots.Controllers.WeatherForecastController" ("Tools")
+2026-01-13 19:51:39.836 [Debug] Executed controller factory for controller "roots.Controllers.WeatherForecastController" ("Tools")
+2026-01-13 19:51:39.840 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2026-01-13 19:51:39.860 [Debug] No information found on request to perform content negotiation.
+2026-01-13 19:51:39.863 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2026-01-13 19:51:39.865 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+2026-01-13 19:51:39.870 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"' and content type '"application/json"' to write the response.
+2026-01-13 19:51:39.876 [Information] Executing "ObjectResult", writing value of type '"roots.WeatherForecast[]"'.
+2026-01-13 19:51:39.880 [Information] Executed action "roots.Controllers.WeatherForecastController.Get (Tools)" in 50.81ms
+2026-01-13 19:51:39.890 [Information] Executed endpoint '"roots.Controllers.WeatherForecastController.Get (Tools)"'
+2026-01-13 19:51:39.909 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7095""""/WeatherForecast""" - 200 null "application/json; charset=utf-8" 218.218ms
+2026-01-13 19:51:39.979 [Information] Request starting "HTTP/2" "GET" "https"://"localhost:7095""""/favicon.ico""" - null null
+2026-01-13 19:51:39.993 [Debug] No candidates found for the request path '"/favicon.ico"'
+2026-01-13 19:51:39.996 [Debug] Request did not match any endpoints
+2026-01-13 19:51:40.001 [Debug] The request path "" does not match the path filter
+2026-01-13 19:51:40.005 [Information] Request finished "HTTP/2" "GET" "https"://"localhost:7095""""/favicon.ico""" - 404 0 null 26.7747ms
+2026-01-13 19:51:40.018 [Information] Request reached the end of the middleware pipeline without being handled by application code. Request path: "GET" "https"://"localhost:7095""""/favicon.ico", Response status code: 404
