@@ -7,25 +7,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Redirect.Func", "Redirect.Func", "{B0203920-AF21-4943-8592-0E85B9A1FA5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Redirect.Func", "Redirect.Func\Redirect.Func.csproj", "{536D6D96-99F7-4BFE-B3A3-9DB0EA2A5FC8}"
-EndProject
 Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{536D6D96-99F7-4BFE-B3A3-9DB0EA2A5FC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{536D6D96-99F7-4BFE-B3A3-9DB0EA2A5FC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{536D6D96-99F7-4BFE-B3A3-9DB0EA2A5FC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{536D6D96-99F7-4BFE-B3A3-9DB0EA2A5FC8}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B0203920-AF21-4943-8592-0E85B9A1FA5E} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
-		{536D6D96-99F7-4BFE-B3A3-9DB0EA2A5FC8} = {B0203920-AF21-4943-8592-0E85B9A1FA5E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4DE9560A-0DCA-4538-897E-99794DAF7B26}
