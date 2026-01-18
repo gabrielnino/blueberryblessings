@@ -1,8 +1,8 @@
 {
   "profiles": {
-    "Redirect.Func": {
+    "redirect": {
       "commandName": "Project",
-      "commandLineArgs": "--port 7190",
+      "commandLineArgs": "--port 7050",
       "launchBrowser": false
     }
   }
