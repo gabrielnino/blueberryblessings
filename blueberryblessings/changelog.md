@@ -1,5 +1,23 @@
 # Changelog - Blueberry Blessings
 
+### KROMA-ALIGN-BLUEBERRY-20260625 - 2026-06-25 23:56:00
+**Autor:** Antigravity (Google DeepMind AI)
+**Estado:** Exitoso
+
+#### 🛠️ Cambios Realizados
+*   **components/AboutSection.tsx**: [NEW] Creación del componente atómico para la sección de historia y actualización de cosecha 2026 (sábado 27 de junio).
+*   **components/PricingSection.tsx**: [NEW] Creación del componente atómico para la tabla de precios detallados de arándanos frescos (Regular/Bulk, cajas de 5 lb/10 lb) y congelados.
+*   **components/OrderSection.tsx**: [NEW] Creación del componente de instrucciones de pedido (7 campos obligatorios, celular `604-808-9060`, correo `tastyblueberries@gmail.com` y horario de granja).
+*   **components/MapSection.tsx**: [NEW] Creación del componente de ubicación integrando el mapa SVG e incorporando el enlace directo a Google Maps (`https://cutt.ly/1TCnpf`).
+*   **components/Footer.tsx**: [NEW] Creación del componente atómico de pie de página para alojar derechos de autor e iconos sociales.
+*   **app/page.tsx**: [MODIFY] Refactorizado por completo para servir como orquestador liviano (menor a 30 líneas) importando los subcomponentes atómicos anteriores para cumplir estrictamente con el límite de 250 líneas físicas de código del Manifiesto MAPA.
+*   **docs/02_guia_arquitectonica.md**: [MODIFY] Sincronización de la guía arquitectónica de componentes detallando las especificaciones e integrando los nuevos bloques modulares en el diagrama de clases de Mermaid.
+
+#### 🧪 Verificación y Pruebas
+*   **Comando Ejecutado**: `npm run test` y `npm run build`
+*   **Resultado de Pruebas**: 1 passed (100% exitoso), compilación sin errores
+*   **Verificación Visual**: Lazo Cerrado, validado por el desarrollador en pantalla.
+
 ### KROMA-ALIGN-BLUEBERRY-20260625 - 2026-06-25 23:52:00
 **Autor:** Antigravity (Google DeepMind AI)
 **Estado:** Exitoso

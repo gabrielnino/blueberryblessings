@@ -1,7 +1,7 @@
 # GUÍA ARQUITECTÓNICA DE COMPONENTES (02_guia_arquitectonica.md)
 
 **ID de Intervención:** KROMA-ALIGN-BLUEBERRY-20260625  
-**Fecha de Intervención:** 2026-06-25 23:51:00  
+**Fecha de Intervención:** 2026-06-25 23:55:00  
 **Autor:** Antigravity (Agente de Inteligencia Artificial - Google DeepMind)  
 **Estado:** Auditado, Alineado y Consolidado bajo el Método MAPA  
 
@@ -17,6 +17,8 @@ Este documento detalla la estructura arquitectónica, las especificaciones técn
 
 El proyecto está diseñado bajo un modelo híbrido en Next.js, utilizando Server Components por defecto para optimizar el rendimiento y la entrega de HTML (SEO/LCP), y Client Components aislados y atómicos únicamente donde la interactividad del navegador (DOM, eventos y efectos) lo requiera.
 
+Para cumplir con la **Modularidad Crítica (Regla de las 250 líneas)**, la lógica de la landing page ha sido segregada en componentes atómicos individuales y enfocados.
+
 ### 2.1. RootLayout (`app/layout.tsx`)
 *   **Tipo:** Server Component (Layout de Raíz).
 *   **Responsabilidad:** Define el andamiaje del documento HTML, las fuentes tipográficas globales y los metadatos de accesibilidad del sitio.
@@ -30,12 +32,10 @@ El proyecto está diseñado bajo un modelo híbrido en Next.js, utilizando Serve
 
 ### 2.2. Home Page (`app/page.tsx`)
 *   **Tipo:** Server Component (Página Estática).
-*   **Responsabilidad:** Componer la estructura visual de la landing page principal, ensamblando el bloque Hero animado, la cuadrícula de tarjetas de información y el pie de página.
+*   **Responsabilidad:** Componer la estructura visual de la landing page principal, actuando como un orquestador que ensambla los subcomponentes atómicos sin añadir lógica de renderizado compleja.
 *   **Especificaciones:**
-    *   Importa y renderiza el componente interactivo `VideoHero` en la parte superior.
-    *   Renderiza una cuadrícula de tres columnas dedicada a las tarjetas informativas detalladas en el mockup (Our Harvest, Natural Delights, y Visit Us).
-    *   Estructura la tarjeta "Visit Us" utilizando un mapa de vectores interactivo en formato SVG inline, garantizando la responsividad y una nitidez del 100% en pantallas Retina sin dependencias de red externas.
-    *   Renderiza el pie de página (`Footer`) de la marca con bordes dorados, centrado de iconos de redes sociales y notas de copyright.
+    *   Importa y renderiza `VideoHero`, `AboutSection`, `PricingSection`, `OrderSection`, `MapSection` y `Footer`.
+    *   Mantiene una extensión ultraligera (menos de 30 líneas físicas de código) que reduce la fatiga cognitiva del asistente de desarrollo.
 
 ### 2.3. VideoHero (`components/VideoHero.tsx`)
 *   **Tipo:** Client Component (`'use client'`).
@@ -52,10 +52,44 @@ El proyecto está diseñado bajo un modelo híbrido en Next.js, utilizando Serve
 
 ### 2.4. Logo (`components/Logo.tsx`)
 *   **Tipo:** Pure Presentational Component.
-*   **Responsabilidad:** Renderizar el monograma oficial de la marca "Blueberry Blessings" en un formato vectorial puro y escalable.
+*   **Responsabilidad:** Renderizar el monograma oficial de la marca "Blueberry Blessings" en un formato vectorial puro y de alta definición.
 *   **Especificaciones:**
     *   Dibuja de forma geométrica los trazos del monograma de las letras "B" entrelazadas en color dorado (`#d4af37`).
     *   Incorpora en el espacio central el diseño de gota con un brote de hojas interiores.
+
+### 2.5. AboutSection (`components/AboutSection.tsx`)
+*   **Tipo:** Server Component.
+*   **Responsabilidad:** Presentar la narrativa de bienvenida y las novedades de la temporada de cosecha actual de arándanos libres de pesticidas (*spray-free*), enfocada en el inicio de la recolección el sábado 27 de junio de 2026.
+*   **Especificaciones:**
+    *   Utiliza una cuadrícula responsiva que contrasta una imagen del proceso de recolección (`/blueberry_harvest.jpg`) con el texto descriptivo del boletín informativo.
+
+### 2.6. PricingSection (`components/PricingSection.tsx`)
+*   **Tipo:** Server Component.
+*   **Responsabilidad:** Mostrar la tabla comparativa de productos y precios de la cosecha actual para compras al por menor y al por mayor de arándanos frescos y bolsas individuales de arándanos congelados.
+*   **Especificaciones:**
+    *   Tabula detalladamente el precio por libra de arándanos frescos (Regular: `$3.95/lb`, Bulk: `$3.75/lb`), el costo de las cajas de 5 lb (`$20`) y 10 lb (`$40`), y el precio de las bolsas de congelados de 4 lb (`$18`).
+    *   Integra informativos de sostenibilidad sobre el reuso de cajas y el retorno de envases para reducción de residuos.
+
+### 2.7. OrderSection (`components/OrderSection.tsx`)
+*   **Tipo:** Server Component.
+*   **Responsabilidad:** Detallar el procedimiento de reserva, los campos de información necesarios, los horarios del huerto y los métodos de contacto y pago.
+*   **Especificaciones:**
+    *   Muestra los 7 campos de información requeridos (nombre, celular, email, cantidad, ventana de entrega, fechas de ausencia y contenedores propios).
+    *   Provee enlaces dinámicos directos (`tel:` y `mailto:`) para llamadas, mensajes de texto (celular `604-808-9060`) y correo electrónico (`tastyblueberries@gmail.com`).
+    *   Establece las advertencias climáticas del huerto (afectaciones por lluvia) y los métodos de pago aceptados (efectivo y eTransfer).
+
+### 2.8. MapSection (`components/MapSection.tsx`)
+*   **Tipo:** Server Component.
+*   **Responsabilidad:** Mostrar la ubicación del huerto mediante una ilustración cartográfica responsiva en SVG y un botón para navegación por GPS.
+*   **Especificaciones:**
+    *   Utiliza una composición SVG inline que representa el mapa del área con calles y marcador de posición rojo.
+    *   Implementa un enlace de redirección directa al servicio externo de mapas mediante el enlace corto proporcionado: `https://cutt.ly/1TCnpf`.
+
+### 2.9. Footer (`components/Footer.tsx`)
+*   **Tipo:** Server Component.
+*   **Responsabilidad:** Proveer enlaces a perfiles sociales corporativos y derechos de copyright.
+*   **Especificaciones:**
+    *   Muestra iconos SVG vectoriales de redes sociales (Facebook, Instagram, YouTube) integrados de forma alineada en color dorado.
 
 ---
 
@@ -85,6 +119,21 @@ classDiagram
         <<Component>>
         +string className
     }
+    class AboutSection {
+        <<Component>>
+    }
+    class PricingSection {
+        <<Component>>
+    }
+    class OrderSection {
+        <<Component>>
+    }
+    class MapSection {
+        <<Component>>
+    }
+    class Footer {
+        <<Component>>
+    }
     class GlobalsCSS {
         <<Styles>>
         +themeColors brandColors
@@ -94,6 +143,11 @@ classDiagram
     RootLayout ..> GlobalsCSS : Importa estilos globales
     RootLayout --> Home : Renderiza el árbol secundario
     Home --> VideoHero : Monta en cabecera
+    Home --> AboutSection : Monta
+    Home --> PricingSection : Monta
+    Home --> OrderSection : Monta
+    Home --> MapSection : Monta
+    Home --> Footer : Monta
     VideoHero --> Logo : Importa logotipo
 ```
 
