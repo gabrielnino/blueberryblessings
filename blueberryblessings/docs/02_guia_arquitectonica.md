@@ -25,6 +25,7 @@ Para cumplir con la **Modularidad Crítica (Regla de las 250 líneas)**, la lóg
 *   **Especificaciones:**
     *   Carga la fuente sans-serif moderna `Geist` de Google Fonts e inyecta la variable CSS `--font-geist-sans`.
     *   Carga la fuente serif elegante `Playfair Display` de Google Fonts e inyecta la variable CSS `--font-playfair`.
+    *   Configura el favicon de la aplicación a través de la imagen vectorial `app/icon.svg`, reemplazando el icono genérico por defecto de Next.js.
     *   Define los metadatos SEO globales de la plataforma:
         *   `title`: "Growing Together | BC Blueberry Growers"
         *   `description`: "Supporting growers, strengthening communities, and celebrating British Columbia’s blueberry industry."

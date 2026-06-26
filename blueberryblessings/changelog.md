@@ -1,5 +1,20 @@
 # Changelog - Blueberry Blessings
 
+### KROMA-ALIGN-BLUEBERRY-20260626 - 2026-06-26 00:02:00
+**Autor:** Antigravity (Google DeepMind AI)
+**Estado:** Exitoso
+
+#### 🛠️ Cambios Realizados
+*   **app/icon.svg**: [NEW] Creación de un favicon personalizado con el logotipo dorado de Blueberry Blessings sobre fondo azul profundo, reemplazando el favicon Next.js original.
+*   **app/favicon.ico**: [DELETE] Eliminado el favicon original para prevenir conflictos de lectura en el navegador.
+*   **next.config.ts**: [MODIFY] Desactivado el indicador de estado de compilación/ruta en desarrollo (`appIsrStatus: false`) de Next.js 15, eliminando la insignia flotante con la letra "N" en la esquina inferior izquierda.
+*   **docs/02_guia_arquitectonica.md**: [MODIFY] Documentado el uso del nuevo archivo `app/icon.svg` como favicon oficial del sitio.
+
+#### 🧪 Verificación y Pruebas
+*   **Comando Ejecutado**: `npm run test` y `npm run build`
+*   **Resultado de Pruebas**: 1 passed (100% exitoso), compilación sin errores
+*   **Verificación Visual**: Lazo Cerrado, confirmado de forma interactiva por el operador humano.
+
 ### KROMA-ALIGN-BLUEBERRY-20260625 - 2026-06-25 23:59:00
 **Autor:** Antigravity (Google DeepMind AI)
 **Estado:** Exitoso
