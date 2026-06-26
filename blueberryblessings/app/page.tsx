@@ -2,77 +2,141 @@ import VideoHero from '@/components/VideoHero';
 
 export default function Home() {
   return (
-    <main className="flex-1 flex flex-col bg-brand-blue-deep min-h-screen">
-      {/* Fullscreen Video Hero Section */}
+    <main className="flex-1 flex flex-col min-h-screen bg-[#0a1931]">
+      {/* 1. Fullscreen Video Hero with Header */}
       <VideoHero />
       
-      {/* Core values / Info section */}
-      <section id="learn-more" className="py-24 px-6 md:px-12 bg-white text-slate-800">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-brand-blue-deep tracking-tight">
-              Nurturing British Columbia's Blueberry Legacy
-            </h2>
-            <p className="mt-4 text-lg text-slate-600 leading-relaxed">
-              From family-owned farms to global tables, British Columbia is proud to be one of the largest highbush blueberry growing regions in the world.
-            </p>
-          </div>
-          
+      {/* 2. Three-Card Sections (Cream background from mockup) */}
+      <section id="content" className="py-20 px-6 md:px-12 bg-[#fdfaf5] text-slate-800 flex justify-center">
+        <div className="max-w-6xl w-full">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Feature 1 */}
-            <div className="p-8 rounded-2xl bg-slate-50 border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300">
-              <div className="w-12 h-12 rounded-full bg-brand-blue-accent/10 flex items-center justify-center text-brand-blue-accent mb-6">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold text-brand-blue-deep mb-3">Grower Support</h3>
-              <p className="text-slate-600 leading-relaxed text-sm">
-                Providing tools, educational resources, and agricultural research to help farmers maximize crop health, yield, and sustainability.
-              </p>
-            </div>
             
-            {/* Feature 2 */}
-            <div className="p-8 rounded-2xl bg-slate-50 border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300">
-              <div className="w-12 h-12 rounded-full bg-brand-blue-accent/10 flex items-center justify-center text-brand-blue-accent mb-6">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+            {/* Card 1: Our Harvest */}
+            <div className="flex flex-col bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300">
+              <div className="aspect-[4/3] w-full overflow-hidden">
+                <img 
+                  src="/blueberry_harvest.jpg" 
+                  alt="Harvesting organic blueberries"
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                />
+              </div>
+              <div className="p-8 flex flex-col flex-1">
+                <h3 className="text-xl font-serif font-semibold text-brand-gold mb-4">
+                  Our Harvest
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed flex-1">
+                  We handpick each berry at the peak of ripeness in our fields to ensure you receive only the finest quality nature has to offer.
+                </p>
+              </div>
+            </div>
+
+            {/* Card 2: Natural Delights */}
+            <div className="flex flex-col bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300">
+              <div className="aspect-[4/3] w-full overflow-hidden">
+                <img 
+                  src="/blueberry_muffins.jpg" 
+                  alt="Freshly baked blueberry muffins"
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                />
+              </div>
+              <div className="p-8 flex flex-col flex-1">
+                <h3 className="text-xl font-serif font-semibold text-brand-gold mb-4">
+                  Natural Delights
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed flex-1">
+                  Savor our freshly baked goods, made daily with organic blueberries, local grains, and wholesome ingredients.
+                </p>
+              </div>
+            </div>
+
+            {/* Card 3: Visit Us */}
+            <div className="flex flex-col bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-shadow duration-300">
+              {/* Scalable vector SVG Map mimicking the mockup */}
+              <div className="aspect-[4/3] w-full overflow-hidden relative bg-[#f4f6f0]">
+                <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full object-cover">
+                  {/* Grass/Background grid */}
+                  <rect width="400" height="300" fill="#f4f6f0" />
+                  
+                  {/* Styled roads */}
+                  <path d="M -20,120 L 420,120" stroke="#ffffff" strokeWidth="24" />
+                  <path d="M 130,-20 L 130,320" stroke="#ffffff" strokeWidth="24" />
+                  <path d="M 330,-20 L 210,320" stroke="#ffffff" strokeWidth="18" />
+                  
+                  {/* Styled Green Areas / Blocks */}
+                  <rect x="20" y="20" width="85" height="70" rx="8" fill="#e2ebd5" />
+                  <rect x="160" y="20" width="140" height="75" rx="8" fill="#e2ebd5" />
+                  <rect x="240" y="160" width="140" height="110" rx="8" fill="#e2ebd5" />
+                  <rect x="20" y="160" width="85" height="110" rx="8" fill="#e2ebd5" />
+
+                  {/* Pin marker shadow */}
+                  <ellipse cx="200" cy="140" rx="12" ry="5" fill="rgba(0,0,0,0.12)" />
+                  
+                  {/* Red pin marker */}
+                  <path 
+                    d="M 200,98 C 185,98 178,110 200,140 C 222,110 215,98 200,98 Z" 
+                    fill="#d9383a" 
+                  />
+                  <circle cx="200" cy="112" r="5" fill="#ffffff" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-brand-blue-deep mb-3">Community Growth</h3>
-              <p className="text-slate-600 leading-relaxed text-sm">
-                Strengthening ties through local events, school meal programs, and sustainable farming initiatives that benefit British Columbia families.
-              </p>
-            </div>
-            
-            {/* Feature 3 */}
-            <div className="p-8 rounded-2xl bg-slate-50 border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300">
-              <div className="w-12 h-12 rounded-full bg-brand-blue-accent/10 flex items-center justify-center text-brand-blue-accent mb-6">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
+              <div className="p-8 flex flex-col flex-1">
+                <h3 className="text-xl font-serif font-semibold text-brand-gold mb-4">
+                  Visit Us
+                </h3>
+                <p className="text-slate-600 text-sm leading-relaxed flex-1">
+                  333 Calaraluira Street,<br />
+                  Suresalla, TA 22528
+                </p>
               </div>
-              <h3 className="text-xl font-semibold text-brand-blue-deep mb-3">Industry Leadership</h3>
-              <p className="text-slate-600 leading-relaxed text-sm">
-                Driving innovation, high-quality production standards, and global marketing to safeguard the economic prosperity of BC agriculture.
-              </p>
             </div>
+
           </div>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-12 px-6 md:px-12 bg-brand-blue-deep text-slate-400 border-t border-brand-blue-accent/30 text-sm">
-        <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="flex flex-col items-center md:items-start gap-2">
-            <span className="font-semibold text-white tracking-wide uppercase">BC Blueberry Growers</span>
-            <span className="text-xs">© {new Date().getFullYear()} Blueberry Blessings. All rights reserved.</span>
+      {/* 3. Footer Section (Dark Blue bar with gold borders and social icons) */}
+      <footer className="py-8 bg-[#0a1931] border-t border-b border-brand-gold/30 text-brand-gold text-sm w-full flex justify-center z-20">
+        <div className="max-w-6xl w-full flex flex-col items-center gap-4">
+          {/* Social Icons in Gold */}
+          <div className="flex gap-8 justify-center">
+            <a 
+              href="https://facebook.com" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:text-white transition-colors duration-200"
+              aria-label="Facebook"
+            >
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.8c4.56-.93 8-4.96 8-9.8z"/>
+              </svg>
+            </a>
+            <a 
+              href="https://instagram.com" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:text-white transition-colors duration-200"
+              aria-label="Instagram"
+            >
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+              </svg>
+            </a>
+            <a 
+              href="https://youtube.com" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:text-white transition-colors duration-200"
+              aria-label="YouTube"
+            >
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M23.498 6.163a3.003 3.003 0 00-2.11-2.11C19.518 3.545 12 3.545 12 3.545s-7.518 0-9.388.507a3.003 3.003 0 00-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 002.11 2.11c1.87.507 9.388.507 9.388.507s7.518 0 9.388-.507a3.003 3.003 0 002.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </a>
           </div>
-          <div className="flex gap-6">
-            <a href="#privacy" className="hover:text-brand-gold transition-colors">Privacy Policy</a>
-            <a href="#terms" className="hover:text-brand-gold transition-colors">Terms of Service</a>
-            <a href="#contact" className="hover:text-brand-gold transition-colors">Contact Us</a>
-          </div>
+          {/* Small Copyright */}
+          <span className="text-[10px] tracking-widest uppercase text-brand-gold/60">
+            © {new Date().getFullYear()} Blueberry Blessings. All rights reserved.
+          </span>
         </div>
       </footer>
     </main>

@@ -1,5 +1,23 @@
 # Changelog - Blueberry Blessings
 
+### KROMA-ALIGN-BLUEBERRY-20260625 - 2026-06-25 23:52:00
+**Autor:** Antigravity (Google DeepMind AI)
+**Estado:** Exitoso
+
+#### 🛠️ Cambios Realizados
+*   **public/**: [NEW] Copiados los recursos gráficos generados por la IA: `/blueberry_basket.jpg`, `/blueberry_harvest.jpg` y `/blueberry_muffins.jpg`.
+*   **components/Logo.tsx**: [NEW] Creación del componente vectorial SVG con el monograma de la marca (doble B entrelazada, gota de rocío y brote).
+*   **app/layout.tsx**: [MODIFY] Configurada e importada la fuente premium Google Font `Playfair Display` en las variables globales.
+*   **app/globals.css**: [MODIFY] Enlazada la clase de Tailwind `font-serif` a la fuente cargada Playfair Display.
+*   **components/VideoHero.tsx**: [MODIFY] Rediseñado el bloque Hero para incorporar la navegación centrada, el logo, los textos promocionales en inglés y la imagen flotante de la canasta de arándanos de acuerdo con el mockup.
+*   **app/page.tsx**: [MODIFY] Reemplazados los bloques anteriores por el diseño de tres tarjetas inferiores (Our Harvest, Natural Delights y Visit Us) con el mapa SVG inline interactivo, traduciendo todo el contenido al inglés y añadiendo el pie de página de barra azul y dorada.
+*   **docs/02_guia_arquitectonica.md**: [MODIFY] Actualización de la documentación arquitectónica para reflejar la especificación de `Logo.tsx` y la tipografía Playfair Display, adaptando las interacciones en los diagramas de Mermaid.
+
+#### 🧪 Verificación y Pruebas
+*   **Comando Ejecutado**: `npm run test` y `npm run build`
+*   **Resultado de Pruebas**: 1 passed (100% exitoso), compilación sin errores
+*   **Verificación Visual**: Lazo Cerrado, validado por el desarrollador en pantalla.
+
 ### KROMA-ALIGN-BLUEBERRY-20260625 - 2026-06-25 23:35:00
 **Autor:** Antigravity (Google DeepMind AI)
 **Estado:** Exitoso

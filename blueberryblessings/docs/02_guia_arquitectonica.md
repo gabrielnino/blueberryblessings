@@ -1,7 +1,7 @@
 # GUÍA ARQUITECTÓNICA DE COMPONENTES (02_guia_arquitectonica.md)
 
 **ID de Intervención:** KROMA-ALIGN-BLUEBERRY-20260625  
-**Fecha de Intervención:** 2026-06-25 23:37:00  
+**Fecha de Intervención:** 2026-06-25 23:51:00  
 **Autor:** Antigravity (Agente de Inteligencia Artificial - Google DeepMind)  
 **Estado:** Auditado, Alineado y Consolidado bajo el Método MAPA  
 
@@ -22,6 +22,7 @@ El proyecto está diseñado bajo un modelo híbrido en Next.js, utilizando Serve
 *   **Responsabilidad:** Define el andamiaje del documento HTML, las fuentes tipográficas globales y los metadatos de accesibilidad del sitio.
 *   **Especificaciones:**
     *   Carga la fuente sans-serif moderna `Geist` de Google Fonts e inyecta la variable CSS `--font-geist-sans`.
+    *   Carga la fuente serif elegante `Playfair Display` de Google Fonts e inyecta la variable CSS `--font-playfair`.
     *   Define los metadatos SEO globales de la plataforma:
         *   `title`: "Growing Together | BC Blueberry Growers"
         *   `description`: "Supporting growers, strengthening communities, and celebrating British Columbia’s blueberry industry."
@@ -29,25 +30,32 @@ El proyecto está diseñado bajo un modelo híbrido en Next.js, utilizando Serve
 
 ### 2.2. Home Page (`app/page.tsx`)
 *   **Tipo:** Server Component (Página Estática).
-*   **Responsabilidad:** Componer la estructura visual de la landing page principal, ensamblando el bloque Hero animado y las secciones corporativas inferiores.
+*   **Responsabilidad:** Componer la estructura visual de la landing page principal, ensamblando el bloque Hero animado, la cuadrícula de tarjetas de información y el pie de página.
 *   **Especificaciones:**
     *   Importa y renderiza el componente interactivo `VideoHero` en la parte superior.
-    *   Estructura una cuadrícula de tres columnas dedicada a los pilares de la industria (Soporte al Agricultor, Crecimiento Comunitario y Liderazgo Industrial).
-    *   Renderiza el pie de página (*Footer*) de la marca alineado con la paleta de colores.
-    *   Todo el contenido textual de esta página es estático, lo que permite que sea pre-renderizado en el servidor para un tiempo de carga instantáneo (LCP).
+    *   Renderiza una cuadrícula de tres columnas dedicada a las tarjetas informativas detalladas en el mockup (Our Harvest, Natural Delights, y Visit Us).
+    *   Estructura la tarjeta "Visit Us" utilizando un mapa de vectores interactivo en formato SVG inline, garantizando la responsividad y una nitidez del 100% en pantallas Retina sin dependencias de red externas.
+    *   Renderiza el pie de página (`Footer`) de la marca con bordes dorados, centrado de iconos de redes sociales y notas de copyright.
 
 ### 2.3. VideoHero (`components/VideoHero.tsx`)
 *   **Tipo:** Client Component (`'use client'`).
-*   **Responsabilidad:** Renderizar y controlar la reproducción del video de fondo embebido de YouTube, garantizando la responsividad del lienzo y gestionando la transición suave de opacidad.
+*   **Responsabilidad:** Renderizar y controlar la reproducción del video de fondo embebido de YouTube, presentar el menú de navegación y estructurar las columnas de contenido del Hero.
 *   **Especificaciones:**
     *   **Variables de Configuración:** `YOUTUBE_VIDEO_ID` (ID único del video de arándanos).
     *   **Estados locales:**
-        *   `isVideoLoaded` (boolean): Controla la transición de opacidad del iframe de `0` a `0.70` para evitar destellos durante la carga.
-    *   **Ciclo de Vida (Effects):**
-        *   `useEffect` inicializador: Inicia un temporizador de seguridad de `1.5` segundos que fuerza `setIsVideoLoaded(true)` como respaldo si el navegador no dispara o retrasa el evento nativo `onLoad` del iframe.
-    *   **Matemática de Adaptabilidad (CSS):**
-        *   Utiliza clases específicas de Tailwind para calcular proporciones de relación de aspecto 16:9 (`w-screen h-[56.25vw] min-h-screen min-w-[177.77vh]`) asegurando que el video cubra el 100% del viewport del usuario sin barras negras horizontales o verticales (*letterboxing/pillarboxing*).
-        *   Aplica `pointer-events: none` al iframe para neutralizar el control de clics directo, permitiendo que las interacciones del cursor fluyan libremente hacia los botones del Hero.
+        *   `isVideoLoaded` (boolean): Controla la transición de opacidad del iframe de `0` a `0.35` (reducción de brillo optimizada para contrastar contra el texto) para evitar destellos durante la carga.
+    *   **Header y Navegación:**
+        *   Coloca el logotipo dorado centrado e inyecta la barra de navegación del mockup: `Home`, `About`, `Shop`, `Recipes`, y `Contact` utilizando la tipografía serif (`font-serif`) y espaciados ampliados.
+    *   **Distribución en Dos Columnas:**
+        *   *Columna Izquierda*: Títulos de bienvenida en inglés (*Welcome to Blueberry Blessings!*), subtítulos y el botón dorado de acción (*Shop Now*).
+        *   *Columna Derecha*: Caja contenedora flotante con la imagen destacada `/blueberry_basket.jpg`, bordes redondeados y efecto de escala en hover.
+
+### 2.4. Logo (`components/Logo.tsx`)
+*   **Tipo:** Pure Presentational Component.
+*   **Responsabilidad:** Renderizar el monograma oficial de la marca "Blueberry Blessings" en un formato vectorial puro y escalable.
+*   **Especificaciones:**
+    *   Dibuja de forma geométrica los trazos del monograma de las letras "B" entrelazadas en color dorado (`#d4af37`).
+    *   Incorpora en el espacio central el diseño de gota con un brote de hojas interiores.
 
 ---
 
@@ -61,7 +69,7 @@ classDiagram
         +ReactNode children
         +Metadata metadata
         +geistSans Font
-        +geistMono Font
+        +playfair Font
     }
     class Home {
         <<Page>>
@@ -73,15 +81,20 @@ classDiagram
         +useEffect()
         +onLoad()
     }
+    class Logo {
+        <<Component>>
+        +string className
+    }
     class GlobalsCSS {
         <<Styles>>
         +themeColors brandColors
-        +animations fadeInUp
+        +fontSerif playfairMapping
     }
     
     RootLayout ..> GlobalsCSS : Importa estilos globales
     RootLayout --> Home : Renderiza el árbol secundario
     Home --> VideoHero : Monta en cabecera
+    VideoHero --> Logo : Importa logotipo
 ```
 
 ---
@@ -102,7 +115,7 @@ sequenceDiagram
     Usuario->>Navegador: Ingresa a la URL (localhost:3000)
     Navegador->>NextJS: Solicita la página raíz (/)
     NextJS-->>Navegador: Envía el HTML inicial renderizado
-    Note over Navegador: Se renderiza el fondo azul fallback (#0a1931)<br/>y el contenido de texto (z-20)
+    Note over Navegador: Se renderiza el fondo azul fallback (#0a1931),<br/>el menú y los textos del mockup (z-20)
     Navegador->>VideoHero: Monta el componente en el cliente (useEffect)
     VideoHero->>VideoHero: Inicia temporizador de respaldo (1500ms)
     Navegador->>YT: Carga el iframe embebido (youtube-nocookie.com)
@@ -113,6 +126,6 @@ sequenceDiagram
     else Temporizador expira (Failsafe)
         VideoHero->>VideoHero: Fuerza setIsVideoLoaded(true)
     end
-    Note over VideoHero: Cambia opacidad del iframe de 0 a 0.70 con transición de 1000ms
+    Note over VideoHero: Cambia opacidad del iframe de 0 a 0.35 con transición de 1000ms
     Navegador-->>Usuario: Muestra la animación de desvanecimiento y reproduce el video de fondo
 ```
