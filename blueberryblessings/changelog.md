@@ -12,6 +12,7 @@
 *   **components/VideoHero.tsx / components/AboutSection.tsx / components/PricingSection.tsx**: [MODIFY] Reemplazadas las etiquetas `<img>` nativas por componentes `<Image>` optimizados de Next.js, configurando dimensiones fijas/fill, priority en imágenes del pliegue superior (LCP) y soporte para pruebas unitarias en Vitest.
 *   **docs/02_guia_arquitectonica.md**: [MODIFY] Actualizadas las especificaciones técnicas de los layouts, páginas, secciones y sitemaps para reflejar las incorporaciones SEO y el uso de `next/image`.
 *   **docs/03_mejores_practicas_seo.md**: [NEW] Creación del documento de mejores prácticas SEO detallando estrategias de SEO local, optimización en página, Core Web Vitals en Next.js y construcción de enlaces.
+*   **next.config.ts**: [MODIFY] Agregado comentario disparador de compilación para forzar el despliegue limpio en Vercel con la nueva configuración del Root Directory.
 
 #### 🧪 Verificación y Pruebas
 *   **Comando Ejecutado**: `npm run test` y `npm run build`
