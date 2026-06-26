@@ -14,6 +14,8 @@
 *   **vitest.config.ts**: [NEW] Configuración del entorno de testing excluyendo PostCSS para resolver conflictos de imports de ESM/CJS de Tailwind.
 *   **components/VideoHero.test.tsx**: [NEW] Adición de la prueba unitaria del componente Hero siguiendo la ceguera voluntaria de código (consultas por roles y etiquetas de accesibilidad).
 *   **package.json**: [MODIFY] Habilitación de `"type": "module"`, instalación de dependencias de testing (`vitest`, `happy-dom`, `@testing-library/react`) y adición del script de testing `"test": "vitest run"`.
+*   **02_guia_arquitectonica.md**: [NEW] Creación del documento de guía arquitectónica de componentes incluyendo especificaciones detalladas e interacciones en diagramas Mermaid.
+
 
 #### 🧪 Verificación y Pruebas
 *   **Comando Ejecutado**: `npm run test` y `npm run build`
