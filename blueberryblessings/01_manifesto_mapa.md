@@ -81,3 +81,25 @@ Para garantizar la resiliencia ante elementos de entrada y editores enriquecidos
     *   **Fase 2 (Sensor de Posición de Hardware):** Verifica que la posición física real simulada del cursor se mantenga estrictamente dentro de los límites de tolerancia geométricos ($\pm 200$ px horizontal y $\pm 100$ px vertical) del ROI del elemento de Next.js.  
 *   **Cortocircuito ante Fallos:** Si cualquiera de las dos validaciones falla (y no se ha configurado un `BypassVisualValidation` explícito), el entorno aborta la operación lanzando una excepción fatal de automatización, impidiendo la corrupción de datos o la ejecución incompleta del flujo sobre la app.  
 *   **Inyección por Teclado Físico:** Una vez superadas las validaciones visuales, la inyección de texto fluye simulando pulsaciones físicas directas de hardware sobre el elemento activo emitiendo la secuencia: seleccionar todo (`Ctrl + A` / `Cmd + A`), eliminar (`Backspace`) para limpiar el estado interno de React, y finalmente escribir el payload del texto de forma secuencial asegurando el correcto disparo de la reactividad del framework.  
+
+---
+
+## 📋 5. DIRECTIVA DE REGISTRO DE CAMBIOS (CHANGELOG.MD)
+
+*   **Regla Inquebrantable:** Es obligatorio crear y mantener un documento llamado `changelog.md` en la raíz del proyecto.
+*   **Mecánica Operativa:** Al final de la ejecución de cada cambio o intervención, el agente de programación debe registrar de manera obligatoria y estructurada los cambios realizados bajo el siguiente formato suministrado:
+
+```markdown
+### [ID-DE-INTERVENCION] - YYYY-MM-DD HH:MM:SS
+**Autor:** [Nombre/Agente]
+**Estado:** [Estado del Cambio, ej: Exitoso, Revertido]
+
+#### 🛠️ Cambios Realizados
+*   **[Componente/Archivo]**: [NEW/MODIFY/DELETE] [breve descripción del cambio].
+
+#### 🧪 Verificación y Pruebas
+*   **Comando Ejecutado**: [Comando de pruebas, ej: npm run test]
+*   **Resultado de Pruebas**: [ej: 1 passed, 100% ok]
+*   **Verificación Visual**: [Lazo Cerrado, ej: Confirmado por Operador Humano en localhost]
+```
+
