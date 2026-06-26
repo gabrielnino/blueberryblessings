@@ -18,8 +18,46 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Growing Together | BC Blueberry Growers",
-  description: "Supporting growers, strengthening communities, and celebrating British Columbia’s blueberry industry.",
+  title: "Blueberry Blessings | Spray-Free Blueberry Farm in Suresalla, BC",
+  description: "Welcome to Blueberry Blessings! Your premium local source for fresh, spray-free, and handpicked blueberries in Suresalla, British Columbia. Pre-order regular or bulk today.",
+  keywords: [
+    "blueberry farm",
+    "spray-free blueberries",
+    "organic blueberries BC",
+    "Suresalla BC blueberries",
+    "buy blueberries Surrey",
+    "local blueberry harvest 2026",
+    "fresh blueberries bulk"
+  ],
+  authors: [{ name: "Blueberry Blessings Farm" }],
+  creator: "Blueberry Blessings Farm",
+  publisher: "Blueberry Blessings Farm",
+  metadataBase: new URL("https://blueberryblessings.ca"),
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Blueberry Blessings | Spray-Free Blueberry Farm in Suresalla, BC",
+    description: "Welcome to Blueberry Blessings! Your premium local source for fresh, spray-free, and handpicked blueberries in Suresalla, British Columbia. Pre-order regular or bulk today.",
+    url: "https://blueberryblessings.ca",
+    siteName: "Blueberry Blessings",
+    images: [
+      {
+        url: "/blueberry_basket.jpg",
+        width: 800,
+        height: 800,
+        alt: "Fresh Blueberry Basket at Blueberry Blessings Farm",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blueberry Blessings | Spray-Free Blueberry Farm in Suresalla, BC",
+    description: "Welcome to Blueberry Blessings! Your premium local source for fresh, spray-free, and handpicked blueberries in Suresalla, British Columbia. Pre-order regular or bulk today.",
+    images: ["/blueberry_basket.jpg"],
+  },
 };
 
 export default function RootLayout({

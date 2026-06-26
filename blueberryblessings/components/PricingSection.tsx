@@ -1,4 +1,6 @@
 import React from 'react';
+import Image from 'next/image';
+import blueberryMuffins from '@/public/blueberry_muffins.jpg';
 
 export default function PricingSection() {
   return (
@@ -107,11 +109,13 @@ export default function PricingSection() {
             </div>
 
             {/* Image Placeholder container */}
-            <div className="mt-6 rounded-xl overflow-hidden aspect-[16/6] border border-slate-100 shadow-inner">
-              <img
-                src="/blueberry_muffins.jpg"
+            <div className="mt-6 rounded-xl overflow-hidden aspect-[16/6] border border-slate-100 shadow-inner relative">
+              <Image
+                src={blueberryMuffins}
                 alt="Delicious muffins made with frozen blueberries"
-                className="w-full h-full object-cover grayscale-[20%] opacity-90"
+                className="object-cover grayscale-[20%] opacity-90"
+                fill
+                sizes="(max-w-md) 100vw, 400px"
               />
             </div>
           </div>

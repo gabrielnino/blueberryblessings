@@ -1,7 +1,9 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import Logo from './Logo';
+import blueberryBasket from '@/public/blueberry_basket.jpg';
 
 // To change the background video in the future, simply update this YouTube video ID.
 const YOUTUBE_VIDEO_ID = 'civWjg2_Ww4';
@@ -90,9 +92,12 @@ export default function VideoHero() {
         {/* Right Column: Featured Image of Blueberry Basket */}
         <div className="flex items-center justify-center animate-fade-in-up animation-delay-200">
           <div className="relative w-full max-w-[280px] sm:max-w-xs md:max-w-sm lg:max-w-md aspect-square rounded-2xl overflow-hidden border-4 border-brand-gold/40 shadow-2xl shadow-brand-blue-deep/60 group">
-            <img
-              src="/blueberry_basket.jpg"
+            <Image
+              src={blueberryBasket}
               alt="Fresh Blueberry Basket in Orchard"
+              width={800}
+              height={800}
+              priority
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
             {/* Soft inner gold glow hover effect */}

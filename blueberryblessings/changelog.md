@@ -1,5 +1,23 @@
 # Changelog - Blueberry Blessings
 
+### KROMA-SEO-BLUEBERRY-20260626 - 2026-06-26 00:12:00
+**Autor:** Antigravity (Google DeepMind AI)
+**Estado:** Exitoso
+
+#### 🛠️ Cambios Realizados
+*   **docs/01_manifesto_mapa.md**: [MODIFY] Agregada la Sección 6 conteniendo los Principios SEO y de Indexabilidad Fundamentales (Estructura semántica, metadatos, Schema JSON-LD, optimización Core Web Vitals e indexación de recursos en sitemaps).
+*   **app/layout.tsx**: [MODIFY] Optimizado el objeto metadata global incorporando títulos, descripciones con palabras clave de conversión, arreglo de palabras clave específicas de la finca, autoría del negocio y enlace dinámico auto-referenciable canonical.
+*   **app/page.tsx**: [MODIFY] Enriquecido el objeto JSON-LD LocalBusiness agregando los enlaces sociales en `sameAs`, enlace oficial de Google Maps, rango de precios, divisas, opciones de pago aceptadas, logo en SVG y descripción optimizada.
+*   **app/sitemap.ts**: [MODIFY] Configurado el generador dinámico de sitemaps para incluir las imágenes importantes de la finca en las rutas para Google Image Search.
+*   **components/VideoHero.tsx / components/AboutSection.tsx / components/PricingSection.tsx**: [MODIFY] Reemplazadas las etiquetas `<img>` nativas por componentes `<Image>` optimizados de Next.js, configurando dimensiones fijas/fill, priority en imágenes del pliegue superior (LCP) y soporte para pruebas unitarias en Vitest.
+*   **docs/02_guia_arquitectonica.md**: [MODIFY] Actualizadas las especificaciones técnicas de los layouts, páginas, secciones y sitemaps para reflejar las incorporaciones SEO y el uso de `next/image`.
+*   **docs/03_mejores_practicas_seo.md**: [NEW] Creación del documento de mejores prácticas SEO detallando estrategias de SEO local, optimización en página, Core Web Vitals en Next.js y construcción de enlaces.
+
+#### 🧪 Verificación y Pruebas
+*   **Comando Ejecutado**: `npm run test` y `npm run build`
+*   **Resultado de Pruebas**: 1 passed (100% exitoso), compilación de producción exitosa en 1.9 segundos.
+*   **Verificación Visual**: Lazo Cerrado, validado exitosamente en entorno local y de compilación estática.
+
 ### KROMA-ALIGN-BLUEBERRY-20260626 - 2026-06-26 00:02:00
 **Autor:** Antigravity (Google DeepMind AI)
 **Estado:** Exitoso

@@ -104,3 +104,33 @@ Para garantizar la resiliencia ante elementos de entrada y editores enriquecidos
 *   **Verificación Visual**: [Lazo Cerrado, ej: Confirmado por Operador Humano en localhost]
 ```
 
+---
+
+## 🏛️ 6. PRINCIPIOS SEO Y DE INDEXABILIDAD FUNDAMENTALES (NEXT.JS)
+
+Para garantizar que Blueberry Blessings sea altamente indexable y logre el mejor posicionamiento orgánico en motores de búsqueda, los agentes y desarrolladores deben seguir estos principios SEO obligatorios:
+
+1. **Estructura Semántica Estricta (Un Solo H1 por Página):**
+   - Cada página debe tener un único elemento `<h1>` que contenga la palabra clave principal de la página.
+   - El resto de los encabezados deben seguir una estructura jerárquica clara (`<h2>` para secciones principales, `<h3>` para subsecciones, `<h4>` para títulos de tarjetas o detalles).
+   - Utilizar etiquetas HTML5 semánticas (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`) en lugar de divs genéricos.
+
+2. **Optimización de Metadatos y Canonicalización:**
+   - Cada ruta o página debe configurar su respectivo objeto `metadata` de Next.js, definiendo un título descriptivo (idealmente menor a 60 caracteres) y una descripción atractiva (menor a 160 caracteres) cargada de palabras clave relevantes.
+   - Es obligatorio configurar una URL canónica auto-referenciada a través de `alternates: { canonical: '/' }` (o la ruta correspondiente) para evitar problemas de contenido duplicado.
+   - Proveer metadatos para OpenGraph (OG) y Twitter Cards sincronizados utilizando URLs absolutas de imágenes.
+
+3. **Datos Estructurados (Schema.org JSON-LD):**
+   - El sitio debe inyectar datos estructurados en formato JSON-LD (usando `<script type="application/ld+json">`) para que motores de búsqueda muestren fragmentos enriquecidos (Rich Snippets).
+   - Para negocios locales, es mandatorio usar el esquema de tipo `LocalBusiness` con propiedades precisas: nombre, logo, teléfono, correo electrónico, dirección física completa (`PostalAddress`), coordenadas geográficas si están disponibles, horarios de atención detallados (`openingHoursSpecification`), rango de precios, métodos de pago aceptados y enlaces a redes sociales oficiales (`sameAs`).
+
+4. **Optimización de Rendimiento y Core Web Vitals (Imágenes):**
+   - Está prohibido el uso de etiquetas `<img>` estándar para imágenes del sitio. Se debe usar el componente `<Image>` de `next/image`.
+   - Las imágenes que aparecen sobre el pliegue inicial (above-the-fold) o que califiquen como el LCP (Largest Contentful Paint) deben llevar la directiva `priority`.
+   - Utilizar el cargado progresivo con desenfoque (`placeholder="blur"`) importando las imágenes de forma local para calcular de forma estática sus dimensiones reales, previniendo el desplazamiento de diseño (CLS).
+
+5. **Indexación y Rastreo Automatizado (Sitemaps y Robots):**
+   - Mantener rutas dinámicas `robots.ts` (`/robots.txt`) y `sitemap.ts` (`/sitemap.xml`).
+   - El sitemap debe incluir no solo las URLs del sitio, sino también las imágenes importantes del negocio (`images: [...]`) en cada registro para que se indexen en las búsquedas visuales de los motores de búsqueda.
+
+

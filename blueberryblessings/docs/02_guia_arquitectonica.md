@@ -27,8 +27,10 @@ Para cumplir con la **Modularidad Crítica (Regla de las 250 líneas)**, la lóg
     *   Carga la fuente serif elegante `Playfair Display` de Google Fonts e inyecta la variable CSS `--font-playfair`.
     *   Configura el favicon de la aplicación a través de la imagen vectorial `app/icon.svg`, reemplazando el icono genérico por defecto de Next.js.
     *   Define los metadatos SEO globales de la plataforma:
-        *   `title`: "Growing Together | BC Blueberry Growers"
-        *   `description`: "Supporting growers, strengthening communities, and celebrating British Columbia’s blueberry industry."
+        *   `title`: "Blueberry Blessings | Spray-Free Blueberry Farm in Suresalla, BC"
+        *   `description`: "Welcome to Blueberry Blessings! Your premium local source for fresh, spray-free, and handpicked blueberries in Suresalla, British Columbia. Pre-order regular or bulk today."
+        *   `keywords`: Listado de palabras clave optimizadas para el nicho agrícola y local.
+        *   `alternates.canonical`: Apunta a la raíz `/` para auto-referenciación.
     *   Configura las clases base del cuerpo (`body`) asegurando un comportamiento fluido y flexible (`min-h-full flex flex-col`).
 
 ### 2.2. Home Page (`app/page.tsx`)
@@ -36,7 +38,8 @@ Para cumplir con la **Modularidad Crítica (Regla de las 250 líneas)**, la lóg
 *   **Responsabilidad:** Componer la estructura visual de la landing page principal, actuando como un orquestador que ensambla los subcomponentes atómicos sin añadir lógica de renderizado compleja.
 *   **Especificaciones:**
     *   Importa y renderiza `VideoHero`, `AboutSection`, `PricingSection`, `OrderSection`, `MapSection` y `Footer`.
-    *   Mantiene una extensión ultraligera (menos de 30 líneas físicas de código) que reduce la fatiga cognitiva del asistente de desarrollo.
+    *   Mantiene una extensión ultraligera (menos de 70 líneas físicas de código) que reduce la fatiga cognitiva del asistente de desarrollo.
+    *   Inyecta datos estructurados enriquecidos (Schema.org JSON-LD de tipo `LocalBusiness`) que incluye: logo, `sameAs` con perfiles sociales, URL del mapa, rango de precios, divisas y métodos de pago aceptados para maximizar la indexabilidad del negocio en motores de búsqueda.
 
 ### 2.3. VideoHero (`components/VideoHero.tsx`)
 *   **Tipo:** Client Component (`'use client'`).
@@ -49,7 +52,7 @@ Para cumplir con la **Modularidad Crítica (Regla de las 250 líneas)**, la lóg
         *   Coloca el logotipo dorado centrado e inyecta la barra de navegación del mockup: `Home`, `About`, `Shop`, `Recipes`, y `Contact` utilizando la tipografía serif (`font-serif`) y espaciados ampliados.
     *   **Distribución en Dos Columnas:**
         *   *Columna Izquierda*: Títulos de bienvenida en inglés (*Welcome to Blueberry Blessings!*), subtítulos y el botón dorado de acción (*Shop Now*).
-        *   *Columna Derecha*: Caja contenedora flotante con la imagen destacada `/blueberry_basket.jpg`, bordes redondeados y efecto de escala en hover.
+        *   *Columna Derecha*: Caja contenedora flotante con la imagen destacada `/blueberry_basket.jpg` renderizada usando el componente `<Image>` de `next/image` con las propiedades `priority` (LCP optimization) y dimensiones explícitas (`800x800`).
 
 ### 2.4. Logo (`components/Logo.tsx`)
 *   **Tipo:** Pure Presentational Component.
@@ -63,6 +66,7 @@ Para cumplir con la **Modularidad Crítica (Regla de las 250 líneas)**, la lóg
 *   **Responsabilidad:** Presentar la narrativa de bienvenida y las novedades de la temporada de cosecha actual de arándanos libres de pesticidas (*spray-free*), enfocada en el inicio de la recolección el sábado 27 de junio de 2026.
 *   **Especificaciones:**
     *   Utiliza una cuadrícula responsiva que contrasta una imagen del proceso de recolección (`/blueberry_harvest.jpg`) con el texto descriptivo del boletín informativo.
+    *   La imagen es optimizada mediante `<Image>` de `next/image` con dimensiones explícitas (`800x600`) importada de forma estática para evitar Cumulative Layout Shift (CLS).
 
 ### 2.6. PricingSection (`components/PricingSection.tsx`)
 *   **Tipo:** Server Component.
@@ -70,6 +74,7 @@ Para cumplir con la **Modularidad Crítica (Regla de las 250 líneas)**, la lóg
 *   **Especificaciones:**
     *   Tabula detalladamente el precio por libra de arándanos frescos (Regular: `$3.95/lb`, Bulk: `$3.75/lb`), el costo de las cajas de 5 lb (`$20`) y 10 lb (`$40`), y el precio de las bolsas de congelados de 4 lb (`$18`).
     *   Integra informativos de sostenibilidad sobre el reuso de cajas y el retorno de envases para reducción de residuos.
+    *   La imagen inferior (`/blueberry_muffins.jpg`) se renderiza usando `<Image>` de `next/image` con la propiedad `fill` dentro de un contenedor posicionado de manera `relative` con clase de aspecto `aspect-[16/6]`.
 
 ### 2.7. OrderSection (`components/OrderSection.tsx`)
 *   **Tipo:** Server Component.
@@ -91,6 +96,16 @@ Para cumplir con la **Modularidad Crítica (Regla de las 250 líneas)**, la lóg
 *   **Responsabilidad:** Proveer enlaces a perfiles sociales corporativos y derechos de copyright.
 *   **Especificaciones:**
     *   Muestra iconos SVG vectoriales de redes sociales (Facebook, Instagram, YouTube) integrados de forma alineada en color dorado.
+
+### 2.10. Robots Configuration (`app/robots.ts`)
+*   **Tipo:** Next.js Metadata Route.
+*   **Responsabilidad:** Generar el archivo `robots.txt` para instruir a los rastreadores sobre qué rutas indexar.
+*   **Especificaciones:** Permite acceso completo a la raíz y desautoriza accesos de rastreo a directorios `/private/`, enlazando también la URL del sitemap oficial.
+
+### 2.11. Sitemap Configuration (`app/sitemap.ts`)
+*   **Tipo:** Next.js Metadata Route.
+*   **Responsabilidad:** Generar el archivo `sitemap.xml` con las URL indexables, la frecuencia de actualización e indexación de recursos multimedia.
+*   **Especificaciones:** Contiene la URL de la página raíz con prioridad `1.0` y frecuencia de cambio semanal. Registra el arreglo `images` conteniendo los tres recursos de fotos (`/blueberry_basket.jpg`, `/blueberry_harvest.jpg`, `/blueberry_muffins.jpg`) para asegurar su indexación en Google Image Search.
 
 ---
 

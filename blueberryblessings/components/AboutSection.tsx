@@ -1,4 +1,6 @@
 import React from 'react';
+import Image from 'next/image';
+import blueberryHarvest from '@/public/blueberry_harvest.jpg';
 
 export default function AboutSection() {
   return (
@@ -7,9 +9,11 @@ export default function AboutSection() {
         
         {/* Left Column: Image (5 cols) */}
         <div className="md:col-span-5 relative rounded-2xl overflow-hidden shadow-xl border border-slate-100 group">
-          <img
-            src="/blueberry_harvest.jpg"
+          <Image
+            src={blueberryHarvest}
             alt="Harvesting fresh organic blueberries"
+            width={800}
+            height={600}
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
         </div>
