@@ -32,14 +32,14 @@ export const metadata: Metadata = {
   authors: [{ name: "Blueberry Blessings Farm" }],
   creator: "Blueberry Blessings Farm",
   publisher: "Blueberry Blessings Farm",
-  metadataBase: new URL("https://blueberryblessings.ca"),
+  metadataBase: new URL("https://blueberryblessings.org"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "Blueberry Blessings | Spray-Free Blueberry Farm in Suresalla, BC",
     description: "Welcome to Blueberry Blessings! Your premium local source for fresh, spray-free, and handpicked blueberries in Suresalla, British Columbia. Pre-order regular or bulk today.",
-    url: "https://blueberryblessings.ca",
+    url: "https://blueberryblessings.org",
     siteName: "Blueberry Blessings",
     images: [
       {

@@ -1,5 +1,20 @@
 # Changelog - Blueberry Blessings
 
+### KROMA-DOMAIN-BLUEBERRY-20260626 - 2026-06-26 09:30:00
+**Autor:** Antigravity (Google DeepMind AI)
+**Estado:** Exitoso
+
+#### 🛠️ Cambios Realizados
+*   **app/sitemap.ts**: [MODIFY] Actualizada la URL base y las direcciones completas de imágenes de `blueberryblessings.ca` a `blueberryblessings.org`.
+*   **app/layout.tsx**: [MODIFY] Actualizadas la `metadataBase` y la URL de OpenGraph para apuntar al dominio oficial `blueberryblessings.org`.
+*   **app/page.tsx**: [MODIFY] Actualizadas las referencias de dominio en los datos estructurados JSON-LD LocalBusiness (`logo`, `image`, `url`) a `blueberryblessings.org`.
+*   **docs/02_guia_arquitectonica.md**: [MODIFY] Actualizada la versión y el ID de intervención para reflejar el cambio de dominio de producción.
+
+#### 🧪 Verificación y Pruebas
+*   **Comando Ejecutado**: `npm run test` y `npm run build`
+*   **Resultado de Pruebas**: 1 passed (100% exitoso), compilación de producción Next.js estática exitosa sin errores.
+*   **Verificación Visual**: Lazo Cerrado, validado localmente.
+
 ### KROMA-SEO-BLUEBERRY-20260626 - 2026-06-26 00:12:00
 **Autor:** Antigravity (Google DeepMind AI)
 **Estado:** Exitoso

@@ -1,7 +1,7 @@
 # GUÍA ARQUITECTÓNICA DE COMPONENTES (02_guia_arquitectonica.md)
 
-**ID de Intervención:** KROMA-ALIGN-BLUEBERRY-20260625  
-**Fecha de Intervención:** 2026-06-25 23:55:00  
+**ID de Intervención:** KROMA-DOMAIN-BLUEBERRY-20260626  
+**Fecha de Intervención:** 2026-06-26 09:30:00  
 **Autor:** Antigravity (Agente de Inteligencia Artificial - Google DeepMind)  
 **Estado:** Auditado, Alineado y Consolidado bajo el Método MAPA  
 
