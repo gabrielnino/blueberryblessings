@@ -87,6 +87,7 @@ Para garantizar la resiliencia ante elementos de entrada y editores enriquecidos
 ## 📋 5. DIRECTIVA DE REGISTRO DE CAMBIOS (CHANGELOG.MD)
 
 *   **Regla Inquebrantable:** Es obligatorio crear y mantener un documento llamado `changelog.md` en la raíz del proyecto.
+*   **Sincronización de Documentación:** Cada cambio finaliza obligatoriamente con la actualización de todos los documentos arquitectónicos, manuales y diagramas que se vean afectados por el cambio.
 *   **Mecánica Operativa:** Al final de la ejecución de cada cambio o intervención, el agente de programación debe registrar de manera obligatoria y estructurada los cambios realizados bajo el siguiente formato suministrado:
 
 ```markdown

@@ -10,7 +10,7 @@
 *   **app/layout.tsx**: [MODIFY] Actualización de los metadatos de accesibilidad y SEO de la aplicación.
 *   **components/VideoHero.tsx**: [NEW] Creación del componente de video Hero adaptable con reproducción en bucle y silenciado en pantalla completa desde `youtube-nocookie.com`, utilizando capas de z-index positivas (`z-0`, `z-10`, `z-20`) para evitar bugs de contexto de apilamiento en el navegador.
 *   **app/page.tsx**: [MODIFY] Sustitución del boilerplate de inicio de Next.js por la maquetación principal estructurada con la sección `VideoHero` y la cuadrícula de características de la industria de arándanos de BC.
-*   **01_manifesto_mapa.md**: [NEW] Creación del manifiesto y reglas metodológicas de desarrollo MAPA y posterior actualización para incluir la directiva de registro de cambios.
+*   **01_manifesto_mapa.md**: [NEW] Creación del manifiesto y reglas de desarrollo MAPA; actualizado para incluir el registro de cambios (changelog.md) y la regla de sincronización obligatoria de documentación.
 *   **vitest.config.ts**: [NEW] Configuración del entorno de testing excluyendo PostCSS para resolver conflictos de imports de ESM/CJS de Tailwind.
 *   **components/VideoHero.test.tsx**: [NEW] Adición de la prueba unitaria del componente Hero siguiendo la ceguera voluntaria de código (consultas por roles y etiquetas de accesibilidad).
 *   **package.json**: [MODIFY] Habilitación de `"type": "module"`, instalación de dependencias de testing (`vitest`, `happy-dom`, `@testing-library/react`) y adición del script de testing `"test": "vitest run"`.
