@@ -3,7 +3,7 @@ import React from 'react';
 export default function AboutSection() {
   return (
     <section id="about" className="py-20 px-6 md:px-12 bg-white text-slate-800 flex justify-center">
-      <div className="max-w-5xl w-full grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+      <div className="max-w-5xl w-full grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 items-center">
         
         {/* Left Column: Image (5 cols) */}
         <div className="md:col-span-5 relative rounded-2xl overflow-hidden shadow-xl border border-slate-100 group">

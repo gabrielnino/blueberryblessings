@@ -19,10 +19,10 @@ export default function OrderSection() {
         </div>
 
         {/* Content Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 items-start">
           
           {/* Left Column: Requirements (7 cols) */}
-          <div className="md:col-span-7 bg-slate-50 p-8 rounded-2xl border border-slate-100">
+          <div className="md:col-span-7 bg-slate-50 p-5 sm:p-8 rounded-2xl border border-slate-100">
             <h3 className="text-lg font-serif font-bold text-brand-blue-deep mb-6">
               📋 Information to Provide
             </h3>

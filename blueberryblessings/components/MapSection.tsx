@@ -3,7 +3,7 @@ import React from 'react';
 export default function MapSection() {
   return (
     <section id="contact" className="py-20 px-6 md:px-12 bg-[#fdfaf5] text-slate-800 flex justify-center border-t border-brand-gold/15">
-      <div className="max-w-5xl w-full grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+      <div className="max-w-5xl w-full grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 items-center">
         
         {/* Left Column: SVG Map (7 cols) */}
         <div className="md:col-span-7 aspect-[4/3] rounded-2xl overflow-hidden shadow-md border border-slate-100 relative bg-[#f4f6f0]">

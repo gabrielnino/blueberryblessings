@@ -1,5 +1,18 @@
 # Changelog - Blueberry Blessings
 
+### KROMA-ALIGN-BLUEBERRY-20260625 - 2026-06-25 23:59:00
+**Autor:** Antigravity (Google DeepMind AI)
+**Estado:** Exitoso
+
+#### 🛠️ Cambios Realizados
+*   **components/AboutSection.tsx / components/OrderSection.tsx / components/MapSection.tsx**: [MODIFY] Reducidos los gaps de las cuadrículas de `gap-12` a `gap-6 md:gap-12` para optimizar la compacidad de los bloques en pantallas de celulares.
+*   **components/PricingSection.tsx / components/OrderSection.tsx**: [MODIFY] Adaptados los rellenos internos de las tarjetas (`p-6 sm:p-8` y `p-5 sm:p-8` respectivamente) para maximizar la legibilidad en pantallas de dispositivos móviles.
+
+#### 🧪 Verificación y Pruebas
+*   **Comando Ejecutado**: `npm run test` y `npm run build`
+*   **Resultado de Pruebas**: 1 passed (100% exitoso), compilación sin errores
+*   **Verificación Visual**: Lazo Cerrado, confirmado de forma interactiva por el operador humano.
+
 ### KROMA-ALIGN-BLUEBERRY-20260625 - 2026-06-25 23:58:00
 **Autor:** Antigravity (Google DeepMind AI)
 **Estado:** Exitoso

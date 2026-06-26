@@ -22,7 +22,7 @@ export default function PricingSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
           
           {/* Card 1: Fresh Blueberries */}
-          <div className="bg-white rounded-2xl p-8 border border-slate-100 shadow-sm flex flex-col h-full">
+          <div className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-100 shadow-sm flex flex-col h-full">
             <span className="text-xs font-semibold text-emerald-600 uppercase tracking-widest bg-emerald-50 self-start px-3 py-1 rounded-full mb-4">
               Picked Daily & Spray-Free
             </span>
@@ -74,7 +74,7 @@ export default function PricingSection() {
           </div>
 
           {/* Card 2: Frozen Blueberries */}
-          <div className="bg-white rounded-2xl p-8 border border-slate-100 shadow-sm flex flex-col h-full md:mt-0">
+          <div className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-100 shadow-sm flex flex-col h-full md:mt-0">
             <span className="text-xs font-semibold text-sky-600 uppercase tracking-widest bg-sky-50 self-start px-3 py-1 rounded-full mb-4">
               Individually Quick Frozen (IQF)
             </span>
