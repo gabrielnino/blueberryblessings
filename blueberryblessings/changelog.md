@@ -1,5 +1,17 @@
 # Changelog - Blueberry Blessings
 
+### KROMA-ALIGN-BLUEBERRY-20260625 - 2026-06-25 23:58:00
+**Autor:** Antigravity (Google DeepMind AI)
+**Estado:** Exitoso
+
+#### 🛠️ Cambios Realizados
+*   **components/VideoHero.tsx**: [MODIFY] Reducido el espaciado vertical, tamaño de títulos y dimensiones de la imagen en el Hero Section; eliminado el bloque `overflow-hidden` del contenedor padre para evitar que se corten los textos y botones en pantallas de baja resolución vertical.
+
+#### 🧪 Verificación y Pruebas
+*   **Comando Ejecutado**: `npm run test` y `npm run build`
+*   **Resultado de Pruebas**: 1 passed (100% exitoso), compilación sin errores
+*   **Verificación Visual**: Lazo Cerrado, confirmado de forma interactiva por el operador humano.
+
 ### KROMA-ALIGN-BLUEBERRY-20260625 - 2026-06-25 23:56:00
 **Autor:** Antigravity (Google DeepMind AI)
 **Estado:** Exitoso
