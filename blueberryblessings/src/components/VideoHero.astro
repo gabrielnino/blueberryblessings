@@ -97,26 +97,29 @@ const YOUTUBE_VIDEO_ID = "civWjg2_Ww4";
   const container = document.getElementById('youtube-hero-container');
 
   if (isDesktop && container) {
-    const iframe = document.createElement('iframe');
-    iframe.id = "hero-video-iframe";
-    iframe.src = `https://www.youtube-nocookie.com/embed/${YOUTUBE_VIDEO_ID}?autoplay=1&mute=1&loop=1&playlist=${YOUTUBE_VIDEO_ID}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&enablejsapi=1`;
-    iframe.title = "Blueberry Fields Background Video";
-    iframe.allow = "autoplay; encrypted-media";
-    iframe.className = "absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-screen h-[56.25vw] min-h-screen min-w-[177.77vh] border-0";
-    iframe.style.pointerEvents = "none";
-    
-    // Smooth transition
-    iframe.addEventListener('load', () => {
-      container.classList.remove('opacity-0');
-      container.classList.add('opacity-35');
+    // Delay YouTube player creation until after initial load completes to minimize TBT
+    window.addEventListener('load', () => {
+      const iframe = document.createElement('iframe');
+      iframe.id = "hero-video-iframe";
+      iframe.src = `https://www.youtube-nocookie.com/embed/${YOUTUBE_VIDEO_ID}?autoplay=1&mute=1&loop=1&playlist=${YOUTUBE_VIDEO_ID}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&enablejsapi=1`;
+      iframe.title = "Blueberry Fields Background Video";
+      iframe.allow = "autoplay; encrypted-media";
+      iframe.className = "absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-screen h-[56.25vw] min-h-screen min-w-[177.77vh] border-0";
+      iframe.style.pointerEvents = "none";
+      
+      // Smooth transition
+      iframe.addEventListener('load', () => {
+        container.classList.remove('opacity-0');
+        container.classList.add('opacity-35');
+      });
+
+      container.appendChild(iframe);
+
+      // Fallback load transition
+      setTimeout(() => {
+        container.classList.remove('opacity-0');
+        container.classList.add('opacity-35');
+      }, 2000);
     });
-
-    container.appendChild(iframe);
-
-    // Fallback load transition
-    setTimeout(() => {
-      container.classList.remove('opacity-0');
-      container.classList.add('opacity-35');
-    }, 2000);
   }
 </script>
