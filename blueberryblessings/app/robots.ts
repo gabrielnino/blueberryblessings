@@ -7,7 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    // Replace with the production domain once deployed
-    sitemap: 'https://blueberryblessings.ca/sitemap.xml',
+    sitemap: 'https://www.blueberryblessings.org/sitemap.xml',
   };
 }
