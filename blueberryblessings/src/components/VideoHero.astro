@@ -13,15 +13,11 @@ const YOUTUBE_VIDEO_ID = "civWjg2_Ww4";
     {/* Fallback Background (Deep Blue) */}
     <div class="absolute inset-0 bg-brand-blue-deep"></div>
     
-    {/* YouTube Video iframe Embed */}
-    <iframe
-      id="hero-video-iframe"
-      src={`https://www.youtube-nocookie.com/embed/${YOUTUBE_VIDEO_ID}?autoplay=1&mute=1&loop=1&playlist=${YOUTUBE_VIDEO_ID}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&enablejsapi=1`}
-      title="Blueberry Fields Background Video"
-      allow="autoplay; encrypted-media"
-      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-screen h-[56.25vw] min-h-screen min-w-[177.77vh] transition-opacity duration-1000 ease-out border-0 opacity-0"
-      style="pointer-events: none;"
-    ></iframe>
+    {/* YouTube Video iframe Embed Placeholder (Loaded dynamically on desktop for performance) */}
+    <div 
+      id="youtube-hero-container" 
+      class="absolute inset-0 w-full h-full opacity-0 transition-opacity duration-1000 ease-out pointer-events-none"
+    ></div>
   </div>
 
   {/* 2. Dark Overlay (z-10) */}
@@ -94,19 +90,33 @@ const YOUTUBE_VIDEO_ID = "civWjg2_Ww4";
 </div>
 
 <script>
-  // Wait for the iframe to load or fallback to 1.5 seconds to fade it in
-  const iframe = document.getElementById('hero-video-iframe') as HTMLIFrameElement | null;
+  const YOUTUBE_VIDEO_ID = "civWjg2_Ww4";
   
-  if (iframe) {
-    const fallbackTimer = setTimeout(() => {
-      iframe.classList.remove('opacity-0');
-      iframe.classList.add('opacity-35');
-    }, 1500);
+  // Check if we are on desktop (width >= 1024px) to defer loading and save bandwidth on mobile
+  const isDesktop = window.matchMedia('(min-width: 1024px)').matches;
+  const container = document.getElementById('youtube-hero-container');
 
+  if (isDesktop && container) {
+    const iframe = document.createElement('iframe');
+    iframe.id = "hero-video-iframe";
+    iframe.src = `https://www.youtube-nocookie.com/embed/${YOUTUBE_VIDEO_ID}?autoplay=1&mute=1&loop=1&playlist=${YOUTUBE_VIDEO_ID}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&enablejsapi=1`;
+    iframe.title = "Blueberry Fields Background Video";
+    iframe.allow = "autoplay; encrypted-media";
+    iframe.className = "absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-screen h-[56.25vw] min-h-screen min-w-[177.77vh] border-0";
+    iframe.style.pointerEvents = "none";
+    
+    // Smooth transition
     iframe.addEventListener('load', () => {
-      clearTimeout(fallbackTimer);
-      iframe.classList.remove('opacity-0');
-      iframe.classList.add('opacity-35');
+      container.classList.remove('opacity-0');
+      container.classList.add('opacity-35');
     });
+
+    container.appendChild(iframe);
+
+    // Fallback load transition
+    setTimeout(() => {
+      container.classList.remove('opacity-0');
+      container.classList.add('opacity-35');
+    }, 2000);
   }
 </script>
