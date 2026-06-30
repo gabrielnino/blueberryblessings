@@ -19,7 +19,7 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   verification: {
-    google: "HuBQa5K0TNq_9NAa64B12mHo2mo14l6b7YgCG6rkQBA",
+    google: "kS38kDV_FBrSY-EHkX4dcq5-xy6zr_eWUYdYN0FspH8",
   },
   title: "Blueberry Blessings | Spray-Free Blueberry Farm in Suresalla, BC",
   description: "Welcome to Blueberry Blessings! Your premium local source for fresh, spray-free, and handpicked blueberries in Suresalla, British Columbia. Pre-order regular or bulk today.",
