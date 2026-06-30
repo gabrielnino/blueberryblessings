@@ -21,8 +21,8 @@ Dado que Blueberry Blessings opera principalmente bajo el modelo de recolección
 - **Regla de Oro:** El nombre, la dirección y el número de teléfono deben ser exactamente los mismos en la página web, en Google Business Profile (GBP) y en todos los directorios locales.
   - **Nombre:** `Blueberry Blessings`
   - **Dirección:** `333 Calaraluira Street, Suresalla, TA 22528`
-  - **Teléfono:** `604-808-9060`
-  - **Correo Electrónico:** `tastyblueberries@gmail.com`
+  - **Teléfono:** `672-338-2258`
+  - **Correo Electrónico:** `gabrielnino@gmail.com`
 - **Impacto:** Cualquier discrepancia (por ejemplo, escribir "St." en lugar de "Street" o usar otro teléfono) confunde el algoritmo de Google, reduciendo la confianza y el posicionamiento en el Local Pack (mapas).
 
 ### 2.2. Optimización de Google Business Profile (GBP)
