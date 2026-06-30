@@ -1,0 +1,28 @@
+# Ignore everything at the root level of F:\ by default
+/*
+
+# Allow specific tracked directories
+!/blueberryblessings/
+!/luisNino/
+!/marketing-redirect/
+!/service_offering/
+!/PythonProject1/
+
+# Allow specific tracked files at the root level
+!/.gitignore
+!/README.md
+!/ScriptDynamicDecisionSolution.ps1
+
+# Fallbacks for system files inside allowed directories if they are untracked
+**/.env
+**/.env.*
+**/.env.local
+**/node_modules/
+**/.next/
+**/out/
+**/build/
+**/dist/
+**/.idea/
+**/.vscode/
+**/Thumbs.db
+**/Desktop.ini

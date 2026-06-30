@@ -1,6 +1,0 @@
-@roots_HostAddress = http://localhost:5171
-
-GET {{roots_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
