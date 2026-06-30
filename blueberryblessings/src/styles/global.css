@@ -8,6 +8,25 @@
   --font-playfair: "Playfair Display", Georgia, serif;
 }
 
+html, body {
+  height: 100% !important;
+  overflow: hidden !important;
+  scroll-behavior: smooth;
+}
+
+main {
+  height: 100vh !important;
+  height: 100dvh !important;
+  overflow-y: scroll !important;
+  scroll-snap-type: y mandatory !important;
+  scroll-behavior: smooth !important;
+}
+
+#home, section, footer {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
 @theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
