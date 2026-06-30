@@ -23,6 +23,31 @@ main {
   will-change: transform;
 }
 
+/* Optimize vertical heights for low-res monitors (e.g. laptop screens) */
+@media (max-height: 900px) {
+  section {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+  .mb-6, .mb-8 {
+    margin-bottom: 0.75rem !important;
+  }
+  .mt-6 {
+    margin-top: 0.5rem !important;
+  }
+  /* Hide secondary muffins image in Shop to ensure pricing list fits viewport */
+  #shop .aspect-video, #shop img {
+    display: none !important;
+  }
+  /* Shrink text sizing slightly */
+  h1 {
+    font-size: 2.25rem !important;
+  }
+  h2 {
+    font-size: 1.75rem !important;
+  }
+}
+
 @theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

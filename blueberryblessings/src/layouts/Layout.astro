@@ -80,6 +80,11 @@ const imageUrl = `${siteURL}/blueberry_basket.jpg`;
         currentIndex = index;
         mainElement.style.transform = `translateY(-${index * 100}dvh)`;
         
+        // Prevent layout shift bugs by resetting native window scroll offsets
+        window.scrollTo(0, 0);
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+        
         setTimeout(() => {
           isScrolling = false;
         }, 800);
